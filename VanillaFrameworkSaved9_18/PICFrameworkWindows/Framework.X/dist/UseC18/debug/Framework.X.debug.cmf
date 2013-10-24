@@ -1,0 +1,1204 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+end_init CODE 0 C2 C2 4 1
+reset_vec CODE 0 0 0 6 1
+config CONFIG 0 7FF8 7FF8 6 1
+$dist/UseC18/debug\Framework.X.debug.obj
+intcodelo CODE 0 18 18 AA 1
+intcode CODE 0 8 8 10 1
+text49 CODE 0 1616 1616 40 1
+text48 CODE 0 DAC DAC F2 1
+text47 CODE 0 17E6 17E6 28 1
+text46 CODE 0 E9E E9E C4 1
+text45 CODE 0 C6 C6 63A 1
+text44 CODE 0 B82 B82 120 1
+text43 CODE 0 17BA 17BA 2C 1
+text42 CODE 0 18F0 18F0 12 1
+text41 CODE 0 10BC 10BC A6 1
+text40 CODE 0 1928 1928 A 1
+text39 CODE 0 1940 1940 6 1
+text38 CODE 0 14FE 14FE 4E 1
+text37 CODE 0 193A 193A 6 1
+text36 CODE 0 1912 1912 C 1
+text35 CODE 0 1734 1734 2E 1
+text34 CODE 0 1832 1832 24 1
+text33 CODE 0 14B0 14B0 4E 1
+intcode_body CODE 0 1206 1206 9A 1
+text31 CODE 0 1946 1946 4 1
+text30 CODE 0 18DE 18DE 12 1
+text29 CODE 0 18CC 18CC 12 1
+text28 CODE 0 15D6 15D6 40 1
+text27 CODE 0 1012 1012 AA 1
+text26 CODE 0 1856 1856 22 1
+text25 CODE 0 1878 1878 1E 1
+text24 CODE 0 1162 1162 A4 1
+text22 CODE 0 1932 1932 8 1
+text21 CODE 0 1400 1400 62 1
+text20 CODE 0 18BA 18BA 12 1
+text19 CODE 0 1320 1320 7A 1
+text18 CODE 0 139A 139A 66 1
+text17 CODE 0 1700 1700 34 1
+text16 CODE 0 12A0 12A0 80 1
+text15 CODE 0 180E 180E 24 1
+text14 CODE 0 18A8 18A8 12 1
+text13 CODE 0 154C 154C 46 1
+text12 CODE 0 1592 1592 44 1
+text11 CODE 0 16CA 16CA 36 1
+text10 CODE 0 1896 1896 12 1
+text9 CODE 0 F62 F62 B0 1
+text8 CODE 0 1462 1462 4E 1
+text7 CODE 0 A56 A56 12C 1
+text6 CODE 0 178E 178E 2C 1
+text5 CODE 0 191E 191E A 1
+text4 CODE 0 CA2 CA2 10A 1
+text3 CODE 0 1762 1762 2C 1
+text2 CODE 0 1902 1902 10 1
+text1 CODE 0 1656 1656 3E 1
+text0 CODE 0 700 700 356 1
+cstackCOMRAM COMRAM 1 1 1 3C 1
+cstackBANK0 BANK0 1 80 80 47 1
+cstackBANK2 BANK2 1 200 200 32 1
+bssBIGRAM BIGRAM 1 232 232 190 1
+bssBANK1 BANK1 1 100 100 D8 1
+bssCOMRAM COMRAM 1 3D 3D 16 1
+cinit CODE 0 1694 1694 36 1
+nvBANK0 BANK0 1 C7 C7 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 000C9-000FF 1
+BANK1 001D8-001FF 1
+BANK3 003C2-003FF 1
+BIGRAM 00053-0007F 1
+BIGRAM 000C9-000FF 1
+BIGRAM 001D8-001FF 1
+BIGRAM 003C2-003FF 1
+CODE 00006-00007 1
+CODE 0194A-07FF7 1
+COMRAM 00053-0007F 1
+CONST 00006-00007 1
+CONST 0194A-07FF7 1
+MEDIUMCONST 0194A-07FF7 1
+RAM 000C9-000FF 1
+RAM 001D8-001FF 1
+RAM 003C2-003FF 1
+SFR 00F80-00FFC 1
+SMALLCONST 0194A-07FF7 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/UseC18/debug\Framework.X.debug.obj
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":130 5C intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":131 64 intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":132 66 intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":136 6C intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":137 74 intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":138 76 intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":140 7C intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":105 C6 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":106 D6 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":107 E6 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":108 F6 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":109 106 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":113 116 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":114 11A text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":118 11C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":119 132 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":120 142 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":121 156 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":124 16C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":125 170 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":126 174 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":132 184 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":137 18E text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":138 192 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":140 19A text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":141 1B2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":142 1C2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":150 1D0 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":153 1D4 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":154 1E8 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":155 1F2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":156 1F6 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":157 206 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":158 208 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":159 21C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":161 232 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":163 234 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":164 23E text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":165 252 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":166 256 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":167 25A text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":169 270 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":175 288 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":176 29C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":177 2B2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":184 2C8 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":185 2FC text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":186 33A text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":187 34E text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":190 35C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":197 360 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":199 364 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":200 378 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":201 382 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":202 386 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":203 3BE text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":206 3D4 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":207 3E8 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":208 3FE text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":211 416 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":213 426 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":214 428 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":215 432 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":216 446 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":217 44A text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":218 482 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":219 496 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":220 498 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":221 49C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":222 4B2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":223 4C2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":225 4D2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":226 4E2 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":229 4E4 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":133 4FA text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":239 526 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":241 538 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":242 53A text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":247 53C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":248 55C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":249 572 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":250 586 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":253 59C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":254 5A6 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":255 5EE text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":257 624 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":258 62C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":259 644 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":260 65E text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":261 678 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":262 692 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":264 6BA text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":266 6D0 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":268 6DA text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":89 700 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":104 70E text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":105 712 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":112 714 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":115 72A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":118 740 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":121 744 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":122 748 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":135 74C text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":139 760 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":144 764 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":148 766 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":153 768 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":162 79C text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":175 7B0 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":203 7B2 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":210 7B6 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":211 7F4 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":220 7FE text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":221 84A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":228 84C text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":229 850 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":243 852 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":245 862 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":246 890 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":250 8A0 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":251 8A8 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":252 8BC text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":257 8CC text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":258 8DC text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":263 8E4 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":264 8F4 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":265 904 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":240 906 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":268 91E text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":269 938 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":217 93A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":280 958 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":281 996 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":290 9A0 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":291 9EC text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":296 9EE text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":297 A3A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/main.c":287 A3C text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":72 A56 text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":73 A70 text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":74 A92 text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":76 AA0 text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":77 ABC text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":80 AC0 text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":81 AE6 text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":87 B1A text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":89 B4C text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":91 B6A text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":92 B76 text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":94 B7E text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":72 B82 text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":73 B9C text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":74 BBE text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":76 BCC text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":77 BE8 text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":80 BEC text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":81 C0E text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":87 C3E text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":89 C6C text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":91 C8A text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":92 C96 text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":94 C9E text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":58 CA2 text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":59 CBA text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":58 D2A text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":61 D64 text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":62 D7C text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":65 D92 text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":68 DA8 text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":70 DAA text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":28 DAC text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":38 DBA text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":39 DD4 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":41 DF6 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":42 E04 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":46 E08 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":47 E20 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":55 E38 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":56 E60 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":59 E8E text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":60 E9A text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":75 E9E text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":76 EB4 text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":78 ECA text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":79 ED0 text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":82 ED4 text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":83 EEA text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":84 EFE text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":85 F14 text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":86 F16 text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":87 F1A text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":88 F30 text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":89 F32 text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":93 F4A text46 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":259 F62 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":262 F74 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":263 F76 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":265 F82 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":266 F9E text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":267 FAA text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":270 FAE text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":271 FCA text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":272 FD6 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":275 FDA text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":276 FEE text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":28 1012 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":38 1018 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":39 1028 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":41 1038 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":42 1046 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":46 104A text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":47 105A text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":55 106A text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":56 108A text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":59 10AC text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":60 10B8 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":21 10BC text41 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":23 10D6 text41 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":25 10E2 text41 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":26 112A text41 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":27 1138 text41 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":12 1162 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":13 1166 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":14 118C text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":16 119A text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":17 11AC text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":18 11D0 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":21 11E0 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":24 11E4 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":25 11E6 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_uart.c":26 11E8 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":83 1206 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":88 1232 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":90 123A intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":92 123C intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":96 1242 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":97 124A intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":99 124C intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":102 1252 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":104 125A intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":105 125C intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":115 1262 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":116 1266 intcode_body CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":72 12A0 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":73 12A4 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":75 12A8 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":77 12B4 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":80 12D4 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":82 130E text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":84 1316 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":85 1318 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":86 131A text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":88 131C text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcopen.c":89 131E text16 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":17 1320 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":18 1336 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":19 134C text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":20 1368 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":19 1388 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":195 139A text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":196 13A6 text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":197 13BC text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":198 13D2 text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":199 13E8 text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":200 13FE text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":299 1400 text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":300 1408 text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":301 141E text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":302 1434 text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":303 144A text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":304 1460 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":24 1462 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":25 146A text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1472 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":27 1474 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1498 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":32 14AC text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 14AE text8 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":230 14B0 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":235 14B6 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":240 14C2 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":247 14CE text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":250 14E4 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":253 14F8 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":254 14FC text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":55 14FE text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":60 150A text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":62 1528 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":63 1538 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":66 153E text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":67 1546 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":31 154C text13 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":32 1550 text13 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":33 1560 text13 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":34 1572 text13 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":36 1582 text13 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":41 1592 text12 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":42 15B6 text12 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":44 15C6 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":24 15D6 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":25 15DE text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 15E6 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":27 15E8 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1604 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":32 1612 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1614 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":24 1616 text49 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":25 161E text49 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1626 text49 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":27 1628 text49 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1644 text49 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":32 1652 text49 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1654 text49 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/uart_thread.c":10 1656 text1 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/uart_thread.c":11 1664 text1 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/uart_thread.c":14 1672 text1 CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2925 1694 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2926 1698 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2928 169C cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2929 169E cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2930 16A0 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2931 16A2 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2932 16A4 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2933 16A6 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2936 16A8 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2937 16AC cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2939 16AE cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2940 16B0 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2941 16B2 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2944 16B4 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2945 16B8 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2947 16BA cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2948 16BC cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2949 16BE cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2957 16C0 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2958 16C2 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2959 16C4 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s5r8.":2960 16C6 cinit CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":223 16CA text11 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":18 1700 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":21 170A text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":22 1712 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":24 1716 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":26 1718 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":27 171C text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":28 1720 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":30 1722 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":31 172A text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":33 172E text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":35 1730 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1open.c":36 1732 text17 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":31 1734 text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":32 1738 text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":33 1742 text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":34 174E text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":36 1758 text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":118 1762 text3 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":141 178E text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":189 17BA text43 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":132 17E6 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":312 180E text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":313 1810 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":315 1812 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":317 1816 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":318 181A text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":319 181E text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":320 1822 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":321 1826 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":323 1828 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":324 182A text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":334 182C text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":335 182E text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/my_i2c.c":337 1830 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":223 1832 text34 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":109 1856 text26 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":19 1878 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":21 187C text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":23 1880 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":24 1882 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":25 1884 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":28 1886 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":29 1888 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":31 188A text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":32 188C text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":34 188E text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":36 1892 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\d1ktcyx.c":11 1896 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\d1ktcyx.c":12 189E text10 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":23 18A8 text14 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/timer1_thread.c":7 18BA text20 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/timer1_thread.c":10 18CA text20 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":42 18CC text29 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":44 18D0 text29 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/user_interrupts.c":47 18DC text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":18 18DE text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":20 18E6 text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":21 18EA text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":22 18EE text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":20 18F0 text42 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":22 18F8 text42 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":23 18FC text42 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":24 1900 text42 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/timer1_thread.c":19 1902 text2 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/timer1_thread.c":31 1910 text2 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":23 1912 text36 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/timer0_thread.c":12 191E text5 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/timer0_thread.c":16 1926 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcread.c":26 1928 text40 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":17 1932 text22 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":18 1934 text22 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":19 1936 text22 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/interrupts.c":20 1938 text22 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":204 193A text37 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":213 193C text37 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\VanillaFramework\PICFrameworkWindows/src/messages.c":218 193E text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1close.c":17 1940 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1close.c":18 1942 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1close.c":19 1944 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcconv.c":24 1946 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcconv.c":25 1948 text31 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_ToMainHigh_sendmsg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+i2recv_msg@maxlength 82 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_x 232 0 BIGRAM 1 bssBIGRAM dist/UseC18/debug\Framework.X.debug.obj
+i2send_msg@tlength 86 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_ToMainHigh_MQ 16C 0 BANK1 1 bssBANK1 dist/UseC18/debug\Framework.X.debug.obj
+start_i2c_slave_reply@length A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i2recv_msg@tlength 88 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__S0 7FFE 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__S1 3C2 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_ofi2_send_msg E9E 0 CODE 0 text48 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_start_i2c_slave_reply DAC 0 CODE 0 text4 dist/UseC18/debug\Framework.X.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/UseC18/debug\Framework.X.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/UseC18/debug\Framework.X.debug.obj
+ToMainLow_recvmsg@maxlength BF 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i1memcpy@d 7 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+i2memcpy@d 34 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_init_i2c 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_ToMainHigh_sendmsg 180E 0 CODE 0 text47 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_timer1_lthread 1912 0 CODE 0 text2 dist/UseC18/debug\Framework.X.debug.obj
+_init_timer1_lthread 18BA 0 CODE 0 text20 dist/UseC18/debug\Framework.X.debug.obj
+_LATB F8A 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_ToMainHigh_recvmsg 17BA 0 CODE 0 text6 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_FromMainHigh_recvmsg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__size_of_ToMainHigh_recvmsg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_main 700 0 CODE 0 text0 dist/UseC18/debug\Framework.X.debug.obj
+_timer0_int_handler 10BC 0 CODE 0 text41 dist/UseC18/debug\Framework.X.debug.obj
+i2c_int_handler@overrun_error 91 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+init_i2c@ic A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i2c_int_handler@data_written 90 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_timer1_int_handler 18CC 0 CODE 0 text29 dist/UseC18/debug\Framework.X.debug.obj
+start C2 0 CODE 0 init C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+_MQ_Main_Willing_to_block 50 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+_start_i2c_slave_reply CA2 0 CODE 0 text4 dist/UseC18/debug\Framework.X.debug.obj
+i1memcpy@d1 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+i2memcpy@d1 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+_FromMainHigh_MQ 100 0 BANK1 1 bssBANK1 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_timer0_int_handler 1162 0 CODE 0 text41 dist/UseC18/debug\Framework.X.debug.obj
+_TMR0H FD7 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_TMR1H FCF 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_TMR0L FD6 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_TMR1L FCE 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+?_in_high_int A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_RCREG FAE 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_TRISB F93 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/UseC18/debug\Framework.X.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/UseC18/debug\Framework.X.debug.obj
+__HRAM 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__LRAM 1 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_T1CON FCD 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+i2send_msg@qmsg 89 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i2c_configure_slave@addr A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i2send_msg@msgtype 83 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i2recv_msg@qmsg 8A 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hconfig 7FFE 0 CONFIG 0 config dist/UseC18/debug\Framework.X.debug.obj
+__Lconfig 7FF8 0 CONFIG 0 config dist/UseC18/debug\Framework.X.debug.obj
+i2recv_msg@msgtype 83 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+OpenTimer1@config A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_ADCValue 48 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+_ConvertADC 1946 0 CODE 0 text31 dist/UseC18/debug\Framework.X.debug.obj
+WriteTimer0@timer 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_CloseTimer1 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+?i2_send_msg 80 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/UseC18/debug\Framework.X.debug.obj
+WriteTimer0@timer0 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/UseC18/debug\Framework.X.debug.obj
+__Hrparam 0 0 ABS 0 rparam dist/UseC18/debug\Framework.X.debug.obj
+__Lrparam 0 0 ABS 0 rparam dist/UseC18/debug\Framework.X.debug.obj
+i1memcpy@n 5 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+i2memcpy@n 32 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+i2_check_msg 1832 0 CODE 0 text34 dist/UseC18/debug\Framework.X.debug.obj
+timer0_int_handler@msgtype 95 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_enter_sleep_mode 193A 0 CODE 0 text37 dist/UseC18/debug\Framework.X.debug.obj
+__Hram 0 0 ABS 0 ram dist/UseC18/debug\Framework.X.debug.obj
+__Lram 0 0 ABS 0 ram dist/UseC18/debug\Framework.X.debug.obj
+_last_reg_recvd 52 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_ReadUSART 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hcomram 0 0 ABS 0 comram dist/UseC18/debug\Framework.X.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/UseC18/debug\Framework.X.debug.obj
+_send_msg 1012 0 CODE 0 text27 dist/UseC18/debug\Framework.X.debug.obj
+?_in_main AB 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/UseC18/debug\Framework.X.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/UseC18/debug\Framework.X.debug.obj
+__Hbss 0 0 RAM 1 bss dist/UseC18/debug\Framework.X.debug.obj
+_recv_msg A56 0 CODE 0 text7 dist/UseC18/debug\Framework.X.debug.obj
+__Lbss 0 0 RAM 1 bss dist/UseC18/debug\Framework.X.debug.obj
+i2send_msg@length 82 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/UseC18/debug\Framework.X.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/UseC18/debug\Framework.X.debug.obj
+?_init_queue A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+WriteTimer1@timer 3 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_timer1_int_handler 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+WriteTimer1@timer1 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_enter_sleep_mode 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_ADCON0 FC2 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+?_ToMainHigh_sendmsg 39 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+?i2_recv_msg 80 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_ADCON1 FC1 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_ADCON2 FC0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_ofi2_in_high_int 191E 0 CODE 0 text36 dist/UseC18/debug\Framework.X.debug.obj
+uart_lthread@length AB 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_PIE1bits F9D 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+init_queue@i AA 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_init_timer1_lthread 18CC 0 CODE 0 text20 dist/UseC18/debug\Framework.X.debug.obj
+i2c_int_handler@msg_to_send 92 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_PIR1bits F9E 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_IPR1bits F9F 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+timer0_lthread@msgbuffer AD 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_LATBbits F8A 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/UseC18/debug\Framework.X.debug.obj
+_SSPADD FC8 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/UseC18/debug\Framework.X.debug.obj
+_RCONbits FD0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+i1memcpy@s 9 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+i2memcpy@s 36 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+?_start_i2c_slave_reply A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/UseC18/debug\Framework.X.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/UseC18/debug\Framework.X.debug.obj
+__Hintret 0 0 ABS 0 intret dist/UseC18/debug\Framework.X.debug.obj
+i2_in_high_int 1912 0 CODE 0 text36 dist/UseC18/debug\Framework.X.debug.obj
+__Lintret 0 0 ABS 0 intret dist/UseC18/debug\Framework.X.debug.obj
+__Hramtop 400 0 RAM 0 ramtop dist/UseC18/debug\Framework.X.debug.obj
+__Lramtop 400 0 RAM 0 ramtop dist/UseC18/debug\Framework.X.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/UseC18/debug\Framework.X.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/UseC18/debug\Framework.X.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/UseC18/debug\Framework.X.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/UseC18/debug\Framework.X.debug.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/UseC18/debug\Framework.X.debug.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/UseC18/debug\Framework.X.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/UseC18/debug\Framework.X.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/UseC18/debug\Framework.X.debug.obj
+main@uthread_data 20B 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+i2_in_low_int 1734 0 CODE 0 text35 dist/UseC18/debug\Framework.X.debug.obj
+_timer0_lthread 191E 0 CODE 0 text5 dist/UseC18/debug\Framework.X.debug.obj
+__Hintcode 18 0 CODE 0 intcode dist/UseC18/debug\Framework.X.debug.obj
+_SSPBUF FC9 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Lintcode 8 0 CODE 0 intcode dist/UseC18/debug\Framework.X.debug.obj
+_timer1_lthread 1902 0 CODE 0 text2 dist/UseC18/debug\Framework.X.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/UseC18/debug\Framework.X.debug.obj
+_ADRESH FC4 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/UseC18/debug\Framework.X.debug.obj
+__pintcode 8 0 CODE 0 intcode dist/UseC18/debug\Framework.X.debug.obj
+_OSCCON FD3 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/UseC18/debug\Framework.X.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/UseC18/debug\Framework.X.debug.obj
+_ADRESL FC3 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+main@msgbuffer 200 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/UseC18/debug\Framework.X.debug.obj
+send_msg@slot 14 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/UseC18/debug\Framework.X.debug.obj
+recv_msg@slot BA 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i1_memcpy 15D6 0 CODE 0 text28 dist/UseC18/debug\Framework.X.debug.obj
+i2_memcpy 1616 0 CODE 0 text49 dist/UseC18/debug\Framework.X.debug.obj
+OpenADC@portconfig A9 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+?_ToMainLow_recvmsg BF 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+main@msgtype 214 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_in_high_int 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_block_on_To_msgqueues F62 0 CODE 0 text9 dist/UseC18/debug\Framework.X.debug.obj
+i1memcpy@s1 3 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+i2memcpy@s1 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__end_of_Delay1KTCYx 18A8 0 CODE 0 text10 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_enable_interrupts 193A 0 CODE 0 text22 dist/UseC18/debug\Framework.X.debug.obj
+main@ic 216 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+i2c_int_handler@i2c_data 93 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hdata 0 0 ABS 0 data dist/UseC18/debug\Framework.X.debug.obj
+__Ldata 0 0 ABS 0 data dist/UseC18/debug\Framework.X.debug.obj
+?i2_check_msg 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+send_msg@qmsg 15 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+recv_msg@qmsg BD 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_block_on_To_msgqueues 1012 0 CODE 0 text9 dist/UseC18/debug\Framework.X.debug.obj
+__end_ofi2_recv_msg CA2 0 CODE 0 text44 dist/UseC18/debug\Framework.X.debug.obj
+?_send_msg B 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+_check_msg 16CA 0 CODE 0 text11 dist/UseC18/debug\Framework.X.debug.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_length 4C 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_send_msg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htemp 0 0 COMRAM 1 temp dist/UseC18/debug\Framework.X.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/UseC18/debug\Framework.X.debug.obj
+?_recv_msg B1 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/UseC18/debug\Framework.X.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/UseC18/debug\Framework.X.debug.obj
+__Hinit C2 0 CODE 0 init dist/UseC18/debug\Framework.X.debug.obj
+__Linit C2 0 CODE 0 init dist/UseC18/debug\Framework.X.debug.obj
+__Hintcodelo C2 0 CODE 0 intcodelo dist/UseC18/debug\Framework.X.debug.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/UseC18/debug\Framework.X.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/UseC18/debug\Framework.X.debug.obj
+__end_of_main A56 0 CODE 0 text0 dist/UseC18/debug\Framework.X.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/UseC18/debug\Framework.X.debug.obj
+__pintcodelo 18 0 CODE 0 intcodelo dist/UseC18/debug\Framework.X.debug.obj
+__end_of_CloseTimer1 1946 0 CODE 0 text39 dist/UseC18/debug\Framework.X.debug.obj
+_ic_ptr C7 0 BANK0 1 nvBANK0 dist/UseC18/debug\Framework.X.debug.obj
+FromMainHigh_recvmsg@maxlength 8C 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_uc_ptr 4E 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__end_of_check_msg 1700 0 CODE 0 text11 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_ConvertADC 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext 0 0 ABS 0 text dist/UseC18/debug\Framework.X.debug.obj
+__Ltext 0 0 ABS 0 text dist/UseC18/debug\Framework.X.debug.obj
+_memcpy 1462 0 CODE 0 text8 dist/UseC18/debug\Framework.X.debug.obj
+?_FromMainHigh_recvmsg 8C 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_Delay1KTCYx 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+i2send_msg@qptr 80 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+?_Delay1KTCYx A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+end_of_initialization 16C0 0 CODE 0 cinit dist/UseC18/debug\Framework.X.debug.obj
+ToMainHigh_sendmsg@length 39 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+init_queue@qptr A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_uart_lthread 1656 0 CODE 0 text1 dist/UseC18/debug\Framework.X.debug.obj
+i2recv_msg@qptr 80 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_msgbuffer 3D 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+send_msg@qptr B 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+recv_msg@qptr B1 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_in_low_int 1592 0 CODE 0 text13 dist/UseC18/debug\Framework.X.debug.obj
+__pnvBANK0 C7 0 BANK0 1 nvBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_ofi2_send_msg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_SSPCON1 FC6 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__size_of_adc_int_handler 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_SSPCON2 FC5 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_ToMainLow_sendmsg 1856 0 CODE 0 text26 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_handle_start F62 0 CODE 0 text46 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_timer1_lthread 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_handle_start E9E 0 CODE 0 text46 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_i2c_int_handler 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+uart_lthread@msgtype A9 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_RCSTAbits FAB 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_TRISCbits F94 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_T1CONbits FCD 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_SleepIfOkay 14B0 0 CODE 0 text33 dist/UseC18/debug\Framework.X.debug.obj
+_ReadADC 1928 0 CODE 0 text40 dist/UseC18/debug\Framework.X.debug.obj
+_ToMainHigh_sendmsg 17E6 0 CODE 0 text47 dist/UseC18/debug\Framework.X.debug.obj
+_OpenTimer1 1700 0 CODE 0 text17 dist/UseC18/debug\Framework.X.debug.obj
+_i2c_int_handler C6 0 CODE 0 text45 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_uart_recv_int_handler 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_OpenADC 12A0 0 CODE 0 text16 dist/UseC18/debug\Framework.X.debug.obj
+_adc_int_handler 14FE 0 CODE 0 text38 dist/UseC18/debug\Framework.X.debug.obj
+?i2_in_high_int 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/UseC18/debug\Framework.X.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/UseC18/debug\Framework.X.debug.obj
+?i2_in_low_int 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+?_timer0_lthread A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_InterruptHandlerLow 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+?_timer1_lthread A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_OpenADC 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/UseC18/debug\Framework.X.debug.obj
+send_msg@data F 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__pbssBIGRAM 232 0 BIGRAM 1 bssBIGRAM dist/UseC18/debug\Framework.X.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/UseC18/debug\Framework.X.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/UseC18/debug\Framework.X.debug.obj
+recv_msg@data B6 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/UseC18/debug\Framework.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/UseC18/debug\Framework.X.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/UseC18/debug\Framework.X.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_ToMainLow_sendmsg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/UseC18/debug\Framework.X.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_OpenTimer1 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/UseC18/debug\Framework.X.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/UseC18/debug\Framework.X.debug.obj
+__CFG_FOSC2$ON 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__size_of_recv_msg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+ToMainLow_sendmsg@data 19 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Hpowerup C2 0 CODE 0 powerup dist/UseC18/debug\Framework.X.debug.obj
+_SSPSTAT FC7 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Lpowerup C2 0 CODE 0 powerup dist/UseC18/debug\Framework.X.debug.obj
+?_ToMainHigh_recvmsg BF 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_timer1_int_handler 18DE 0 CODE 0 text29 dist/UseC18/debug\Framework.X.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/UseC18/debug\Framework.X.debug.obj
+_SSPCON1bits FC6 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/UseC18/debug\Framework.X.debug.obj
+__ptext0 700 0 CODE 0 text0 dist/UseC18/debug\Framework.X.debug.obj
+_SSPCON2bits FC5 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/UseC18/debug\Framework.X.debug.obj
+__ptext1 1656 0 CODE 0 text1 dist/UseC18/debug\Framework.X.debug.obj
+timer1_lthread@tptr A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/UseC18/debug\Framework.X.debug.obj
+__ptext2 1902 0 CODE 0 text2 dist/UseC18/debug\Framework.X.debug.obj
+ToMainLow_sendmsg@msgtype 18 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+ToMainHigh_sendmsg@data 3B 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/UseC18/debug\Framework.X.debug.obj
+__ptext3 1762 0 CODE 0 text3 dist/UseC18/debug\Framework.X.debug.obj
+?_WriteTimer0 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_ToMainLow_recvmsg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_SleepIfOkay 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/UseC18/debug\Framework.X.debug.obj
+__ptext4 CA2 0 CODE 0 text4 dist/UseC18/debug\Framework.X.debug.obj
+?i1_memcpy 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+?i2_memcpy 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/UseC18/debug\Framework.X.debug.obj
+__ptext5 191E 0 CODE 0 text5 dist/UseC18/debug\Framework.X.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/UseC18/debug\Framework.X.debug.obj
+__ptext6 178E 0 CODE 0 text6 dist/UseC18/debug\Framework.X.debug.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__end_of_ConvertADC 194A 0 CODE 0 text31 dist/UseC18/debug\Framework.X.debug.obj
+__Htext8 0 0 ABS 0 text8 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext8 0 0 ABS 0 text8 dist/UseC18/debug\Framework.X.debug.obj
+__ptext7 A56 0 CODE 0 text7 dist/UseC18/debug\Framework.X.debug.obj
+send_msg@tlength 12 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__pbssCOMRAM 3D 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Htext9 0 0 ABS 0 text9 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext9 0 0 ABS 0 text9 dist/UseC18/debug\Framework.X.debug.obj
+__ptext8 1462 0 CODE 0 text8 dist/UseC18/debug\Framework.X.debug.obj
+recv_msg@tlength BB 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__ptext9 F62 0 CODE 0 text9 dist/UseC18/debug\Framework.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/UseC18/debug\Framework.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/UseC18/debug\Framework.X.debug.obj
+__size_of_timer0_int_handler 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_WriteTimer0 1902 0 CODE 0 text42 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_WriteTimer1 18F0 0 CODE 0 text30 dist/UseC18/debug\Framework.X.debug.obj
+uart_lthread@msgbuffer AD 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_WriteTimer0 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__size_of_WriteTimer1 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+ToMainHigh_sendmsg@msgtype 3A 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+FromMainHigh_recvmsg@data 8F 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_ofi2_in_low_int 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_ToMainLow_sendmsg 1878 0 CODE 0 text26 dist/UseC18/debug\Framework.X.debug.obj
+_OSCTUNEbits F9B 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_memcpy 14B0 0 CODE 0 text8 dist/UseC18/debug\Framework.X.debug.obj
+__end_of__initialization 16C0 0 CODE 0 cinit dist/UseC18/debug\Framework.X.debug.obj
+__end_of_in_main 15D6 0 CODE 0 text12 dist/UseC18/debug\Framework.X.debug.obj
+_i2c_configure_slave 180E 0 CODE 0 text15 dist/UseC18/debug\Framework.X.debug.obj
+__CFG_CCP2MX$DEFAULT 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_ToMainLow_recvmsg 178E 0 CODE 0 text3 dist/UseC18/debug\Framework.X.debug.obj
+memcpy@d AD 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_InterruptHandlerLow 18 0 CODE 0 intcodelo dist/UseC18/debug\Framework.X.debug.obj
+_SSPSTATbits FC7 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_init_queues 139A 0 CODE 0 text18 dist/UseC18/debug\Framework.X.debug.obj
+?_WriteTimer1 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+init_timer1_lthread@tptr A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+memcpy@n AB 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_USART_Status 51 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+ReadUSART@data 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+_InterruptHandlerHigh 8 0 CODE 0 intcode dist/UseC18/debug\Framework.X.debug.obj
+__Hidata 0 0 CODE 0 idata dist/UseC18/debug\Framework.X.debug.obj
+__Lidata 0 0 CODE 0 idata dist/UseC18/debug\Framework.X.debug.obj
+memcpy@s AF 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/UseC18/debug\Framework.X.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/UseC18/debug\Framework.X.debug.obj
+_in_high_int 18A8 0 CODE 0 text14 dist/UseC18/debug\Framework.X.debug.obj
+ToMainLow_recvmsg@data C2 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hidloc 0 0 IDLOC 0 idloc dist/UseC18/debug\Framework.X.debug.obj
+__Lidloc 0 0 IDLOC 0 idloc dist/UseC18/debug\Framework.X.debug.obj
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_ReadADC 1932 0 CODE 0 text40 dist/UseC18/debug\Framework.X.debug.obj
+int_func 1206 0 CODE 0 intcode_body dist/UseC18/debug\Framework.X.debug.obj
+send_msg@length D 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_init_queue 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hparam 0 0 ABS 0 rparam dist/UseC18/debug\Framework.X.debug.obj
+__Lparam 0 0 ABS 0 rparam dist/UseC18/debug\Framework.X.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+i2_send_msg DAC 0 CODE 0 text48 dist/UseC18/debug\Framework.X.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_InterruptHandlerHigh 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+?_check_msg A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+ToMainLow_recvmsg@msgtype C0 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+_in_main 1592 0 CODE 0 text12 dist/UseC18/debug\Framework.X.debug.obj
+_init_queue 1320 0 CODE 0 text19 dist/UseC18/debug\Framework.X.debug.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/UseC18/debug\Framework.X.debug.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/UseC18/debug\Framework.X.debug.obj
+i2_recv_msg B82 0 CODE 0 text44 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_start_i2c_slave_reply 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+OpenADC@config A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/UseC18/debug\Framework.X.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/UseC18/debug\Framework.X.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/UseC18/debug\Framework.X.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/UseC18/debug\Framework.X.debug.obj
+__pcinit 1694 0 CODE 0 cinit dist/UseC18/debug\Framework.X.debug.obj
+main@length 215 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+__ramtop 400 0 RAM 0 ramtop C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+?_in_low_int A9 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_init_queues 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_ofi2_in_low_int 1762 0 CODE 0 text35 dist/UseC18/debug\Framework.X.debug.obj
+_ToMainLow_recvmsg 1762 0 CODE 0 text3 dist/UseC18/debug\Framework.X.debug.obj
+__Hconst 0 0 CODE 0 const dist/UseC18/debug\Framework.X.debug.obj
+__Lconst 0 0 CODE 0 const dist/UseC18/debug\Framework.X.debug.obj
+?_memcpy A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i2send_msg@data 84 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+i2recv_msg@data 85 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__HcstackBANK2 0 0 ABS 0 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+__LcstackBANK2 0 0 ABS 0 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+FromMainHigh_recvmsg@msgtype 8D 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__pcstackBANK2 200 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+i2check_msg@qptr 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_of_check_msg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_FromMainHigh_recvmsg 17BA 0 CODE 0 text43 dist/UseC18/debug\Framework.X.debug.obj
+?_uart_lthread A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_uart_lthread 1694 0 CODE 0 text1 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_in_main 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+ToMainHigh_recvmsg@maxlength BF 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+check_msg@qptr A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_Delay1KTCYx 1896 0 CODE 0 text10 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_in_high_int 18BA 0 CODE 0 text14 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_i2c_configure_slave 1832 0 CODE 0 text15 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_timer0_lthread 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_uart_recv_int_handler 1206 0 CODE 0 text24 dist/UseC18/debug\Framework.X.debug.obj
+timer0_lthread@msgval AF 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_ToMainLow_MQ 1A2 0 BANK1 1 bssBANK1 dist/UseC18/debug\Framework.X.debug.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/UseC18/debug\Framework.X.debug.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/UseC18/debug\Framework.X.debug.obj
+handle_start@data_read 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__end_of_timer0_lthread 1928 0 CODE 0 text5 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_InterruptHandlerLow C2 0 CODE 0 intcodelo dist/UseC18/debug\Framework.X.debug.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/UseC18/debug\Framework.X.debug.obj
+__Htext10 0 0 ABS 0 text10 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext10 0 0 ABS 0 text10 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_OpenTimer1 1734 0 CODE 0 text17 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_enter_sleep_mode 1940 0 CODE 0 text37 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_uart_lthread 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext20 0 0 ABS 0 text20 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext20 0 0 ABS 0 text20 dist/UseC18/debug\Framework.X.debug.obj
+__ptext10 1896 0 CODE 0 text10 dist/UseC18/debug\Framework.X.debug.obj
+__Htext30 0 0 ABS 0 text30 dist/UseC18/debug\Framework.X.debug.obj
+__Htext11 0 0 ABS 0 text11 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext30 0 0 ABS 0 text30 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext11 0 0 ABS 0 text11 dist/UseC18/debug\Framework.X.debug.obj
+__ptext20 18BA 0 CODE 0 text20 dist/UseC18/debug\Framework.X.debug.obj
+ToMainHigh_recvmsg@data C2 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Htext40 0 0 ABS 0 text40 dist/UseC18/debug\Framework.X.debug.obj
+__Htext21 0 0 ABS 0 text21 dist/UseC18/debug\Framework.X.debug.obj
+recv_msg@maxlength B3 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext40 0 0 ABS 0 text40 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext21 0 0 ABS 0 text21 dist/UseC18/debug\Framework.X.debug.obj
+__ptext11 16CA 0 CODE 0 text11 dist/UseC18/debug\Framework.X.debug.obj
+__ptext30 18DE 0 CODE 0 text30 dist/UseC18/debug\Framework.X.debug.obj
+__Htext31 0 0 ABS 0 text31 dist/UseC18/debug\Framework.X.debug.obj
+__Htext12 0 0 ABS 0 text12 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext31 0 0 ABS 0 text31 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext12 0 0 ABS 0 text12 dist/UseC18/debug\Framework.X.debug.obj
+__ptext21 1400 0 CODE 0 text21 dist/UseC18/debug\Framework.X.debug.obj
+__ptext40 1928 0 CODE 0 text40 dist/UseC18/debug\Framework.X.debug.obj
+_uart_recv_int_handler 1162 0 CODE 0 text24 dist/UseC18/debug\Framework.X.debug.obj
+__Htext41 0 0 ABS 0 text41 dist/UseC18/debug\Framework.X.debug.obj
+__Htext22 0 0 ABS 0 text22 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext41 0 0 ABS 0 text41 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext22 0 0 ABS 0 text22 dist/UseC18/debug\Framework.X.debug.obj
+__ptext12 1592 0 CODE 0 text12 dist/UseC18/debug\Framework.X.debug.obj
+__ptext31 1946 0 CODE 0 text31 dist/UseC18/debug\Framework.X.debug.obj
+__Htext13 0 0 ABS 0 text13 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext13 0 0 ABS 0 text13 dist/UseC18/debug\Framework.X.debug.obj
+__ptext22 1932 0 CODE 0 text22 dist/UseC18/debug\Framework.X.debug.obj
+__ptext41 10BC 0 CODE 0 text41 dist/UseC18/debug\Framework.X.debug.obj
+__Htext42 0 0 ABS 0 text42 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext42 0 0 ABS 0 text42 dist/UseC18/debug\Framework.X.debug.obj
+__ptext13 154C 0 CODE 0 text13 dist/UseC18/debug\Framework.X.debug.obj
+_ADCON0bits FC2 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext33 0 0 ABS 0 text33 dist/UseC18/debug\Framework.X.debug.obj
+__Htext14 0 0 ABS 0 text14 dist/UseC18/debug\Framework.X.debug.obj
+___extmem_base 20000 0 ABS 0 - C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+__Ltext33 0 0 ABS 0 text33 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext14 0 0 ABS 0 text14 dist/UseC18/debug\Framework.X.debug.obj
+__ptext42 18F0 0 CODE 0 text42 dist/UseC18/debug\Framework.X.debug.obj
+main@t0thread_data 20D 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+__Htext43 0 0 ABS 0 text43 dist/UseC18/debug\Framework.X.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext43 0 0 ABS 0 text43 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/UseC18/debug\Framework.X.debug.obj
+__ptext14 18A8 0 CODE 0 text14 dist/UseC18/debug\Framework.X.debug.obj
+__ptext33 14B0 0 CODE 0 text33 dist/UseC18/debug\Framework.X.debug.obj
+main@t1thread_data 212 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+?_handle_start 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Htext34 0 0 ABS 0 text34 dist/UseC18/debug\Framework.X.debug.obj
+?_ToMainLow_sendmsg 17 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__Htext15 0 0 ABS 0 text15 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext34 0 0 ABS 0 text34 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext15 0 0 ABS 0 text15 dist/UseC18/debug\Framework.X.debug.obj
+__ptext24 1162 0 CODE 0 text24 dist/UseC18/debug\Framework.X.debug.obj
+__ptext43 17BA 0 CODE 0 text43 dist/UseC18/debug\Framework.X.debug.obj
+__Htext44 0 0 ABS 0 text44 dist/UseC18/debug\Framework.X.debug.obj
+__Htext25 0 0 ABS 0 text25 dist/UseC18/debug\Framework.X.debug.obj
+_WriteTimer0 18F0 0 CODE 0 text42 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext44 0 0 ABS 0 text44 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext25 0 0 ABS 0 text25 dist/UseC18/debug\Framework.X.debug.obj
+__ptext15 180E 0 CODE 0 text15 dist/UseC18/debug\Framework.X.debug.obj
+__ptext34 1832 0 CODE 0 text34 dist/UseC18/debug\Framework.X.debug.obj
+_FromMainLow_MQ 136 0 BANK1 1 bssBANK1 dist/UseC18/debug\Framework.X.debug.obj
+__Htext35 0 0 ABS 0 text35 dist/UseC18/debug\Framework.X.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext35 0 0 ABS 0 text35 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/UseC18/debug\Framework.X.debug.obj
+__ptext25 1878 0 CODE 0 text25 dist/UseC18/debug\Framework.X.debug.obj
+__ptext44 B82 0 CODE 0 text44 dist/UseC18/debug\Framework.X.debug.obj
+__Htext45 0 0 ABS 0 text45 dist/UseC18/debug\Framework.X.debug.obj
+__Htext26 0 0 ABS 0 text26 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext45 0 0 ABS 0 text45 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext26 0 0 ABS 0 text26 dist/UseC18/debug\Framework.X.debug.obj
+__ptext16 12A0 0 CODE 0 text16 dist/UseC18/debug\Framework.X.debug.obj
+__ptext35 1734 0 CODE 0 text35 dist/UseC18/debug\Framework.X.debug.obj
+__Htext36 0 0 ABS 0 text36 dist/UseC18/debug\Framework.X.debug.obj
+__size_ofi2_check_msg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext17 0 0 ABS 0 text17 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext36 0 0 ABS 0 text36 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext17 0 0 ABS 0 text17 dist/UseC18/debug\Framework.X.debug.obj
+__ptext26 1856 0 CODE 0 text26 dist/UseC18/debug\Framework.X.debug.obj
+__ptext45 C6 0 CODE 0 text45 dist/UseC18/debug\Framework.X.debug.obj
+__Htext46 0 0 ABS 0 text46 dist/UseC18/debug\Framework.X.debug.obj
+__Htext27 0 0 ABS 0 text27 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext46 0 0 ABS 0 text46 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext27 0 0 ABS 0 text27 dist/UseC18/debug\Framework.X.debug.obj
+__ptext17 1700 0 CODE 0 text17 dist/UseC18/debug\Framework.X.debug.obj
+__ptext36 1912 0 CODE 0 text36 dist/UseC18/debug\Framework.X.debug.obj
+main@test_var 210 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+__Htext37 0 0 ABS 0 text37 dist/UseC18/debug\Framework.X.debug.obj
+__Htext18 0 0 ABS 0 text18 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext37 0 0 ABS 0 text37 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext18 0 0 ABS 0 text18 dist/UseC18/debug\Framework.X.debug.obj
+ToMainHigh_recvmsg@msgtype C0 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__ptext27 1012 0 CODE 0 text27 dist/UseC18/debug\Framework.X.debug.obj
+__ptext46 E9E 0 CODE 0 text46 dist/UseC18/debug\Framework.X.debug.obj
+__Htext47 0 0 ABS 0 text47 dist/UseC18/debug\Framework.X.debug.obj
+__Htext28 0 0 ABS 0 text28 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext47 0 0 ABS 0 text47 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext28 0 0 ABS 0 text28 dist/UseC18/debug\Framework.X.debug.obj
+__ptext18 139A 0 CODE 0 text18 dist/UseC18/debug\Framework.X.debug.obj
+__ptext37 193A 0 CODE 0 text37 dist/UseC18/debug\Framework.X.debug.obj
+__Htext38 0 0 ABS 0 text38 dist/UseC18/debug\Framework.X.debug.obj
+__Htext19 0 0 ABS 0 text19 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext38 0 0 ABS 0 text38 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext19 0 0 ABS 0 text19 dist/UseC18/debug\Framework.X.debug.obj
+__ptext28 15D6 0 CODE 0 text28 dist/UseC18/debug\Framework.X.debug.obj
+__ptext47 17E6 0 CODE 0 text47 dist/UseC18/debug\Framework.X.debug.obj
+__size_ofi1_memcpy 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Htext48 0 0 ABS 0 text48 dist/UseC18/debug\Framework.X.debug.obj
+__Htext29 0 0 ABS 0 text29 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext48 0 0 ABS 0 text48 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext29 0 0 ABS 0 text29 dist/UseC18/debug\Framework.X.debug.obj
+__ptext19 1320 0 CODE 0 text19 dist/UseC18/debug\Framework.X.debug.obj
+__ptext38 14FE 0 CODE 0 text38 dist/UseC18/debug\Framework.X.debug.obj
+__Htext39 0 0 ABS 0 text39 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext39 0 0 ABS 0 text39 dist/UseC18/debug\Framework.X.debug.obj
+__ptext29 18CC 0 CODE 0 text29 dist/UseC18/debug\Framework.X.debug.obj
+__ptext48 DAC 0 CODE 0 text48 dist/UseC18/debug\Framework.X.debug.obj
+__Htext49 0 0 ABS 0 text49 dist/UseC18/debug\Framework.X.debug.obj
+__Ltext49 0 0 ABS 0 text49 dist/UseC18/debug\Framework.X.debug.obj
+__ptext39 1940 0 CODE 0 text39 dist/UseC18/debug\Framework.X.debug.obj
+_ReadUSART 1878 0 CODE 0 text25 dist/UseC18/debug\Framework.X.debug.obj
+_OSCCONbits FD3 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__ptext49 1616 0 CODE 0 text49 dist/UseC18/debug\Framework.X.debug.obj
+_INTCONbits FF2 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_send_msg 10BC 0 CODE 0 text27 dist/UseC18/debug\Framework.X.debug.obj
+__Hend_init C6 0 CODE 0 end_init dist/UseC18/debug\Framework.X.debug.obj
+__Lend_init C2 0 CODE 0 end_init dist/UseC18/debug\Framework.X.debug.obj
+?_ReadADC 2E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+?_OpenTimer1 A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_ofi2_memcpy 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+_CloseTimer1 1940 0 CODE 0 text39 dist/UseC18/debug\Framework.X.debug.obj
+_WriteTimer1 18DE 0 CODE 0 text30 dist/UseC18/debug\Framework.X.debug.obj
+?_i2c_configure_slave A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_FromMainHigh_recvmsg 17E6 0 CODE 0 text43 dist/UseC18/debug\Framework.X.debug.obj
+?_OpenADC A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_init_queue 139A 0 CODE 0 text19 dist/UseC18/debug\Framework.X.debug.obj
+memcpy@d1 A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_InterruptHandlerHigh 12A0 0 CODE 0 intcode_body dist/UseC18/debug\Framework.X.debug.obj
+__CFG_FOSC$HSPLL 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__Hjflash_buffer 7800 0 CODE 0 jflash_buffer dist/UseC18/debug\Framework.X.debug.obj
+__end_of_ReadUSART 1896 0 CODE 0 text25 dist/UseC18/debug\Framework.X.debug.obj
+__Ljflash_buffer 7800 0 CODE 0 jflash_buffer dist/UseC18/debug\Framework.X.debug.obj
+OpenADC@config2 A8 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+send_msg@msgtype E 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__end_of_init_queues 1400 0 CODE 0 text18 dist/UseC18/debug\Framework.X.debug.obj
+recv_msg@msgtype B4 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+__end_of_OpenADC 1320 0 CODE 0 text16 dist/UseC18/debug\Framework.X.debug.obj
+i2c_int_handler@data_read 95 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__Hreset_vec 6 0 CODE 0 reset_vec dist/UseC18/debug\Framework.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/UseC18/debug\Framework.X.debug.obj
+_in_low_int 154C 0 CODE 0 text13 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_enable_interrupts 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+memcpy@s1 A9 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__accesstop 80 0 ABS 0 - C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+__end_of_recv_msg B82 0 CODE 0 text7 dist/UseC18/debug\Framework.X.debug.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/UseC18/debug\Framework.X.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/UseC18/debug\Framework.X.debug.obj
+__pintcode_body 1206 0 CODE 0 intcode_body dist/UseC18/debug\Framework.X.debug.obj
+_enable_interrupts 1932 0 CODE 0 text22 dist/UseC18/debug\Framework.X.debug.obj
+intlevel0 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+__size_of_block_on_To_msgqueues 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+intlevel1 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+intlevel2 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+intlevel3 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s5r8.obj
+__size_ofi2_recv_msg 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+i2c_int_handler@error_buf 8D 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+ToMainLow_sendmsg@length 17 0 COMRAM 1 cstackCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+_counter2 4A 0 COMRAM 1 bssCOMRAM dist/UseC18/debug\Framework.X.debug.obj
+__size_ofi2_in_high_int 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+i2send_msg@slot 88 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+?_init_i2c A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_init_timer1_lthread 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_SleepIfOkay 14FE 0 CODE 0 text33 dist/UseC18/debug\Framework.X.debug.obj
+i2recv_msg@slot 87 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+_ToMainHigh_recvmsg 178E 0 CODE 0 text6 dist/UseC18/debug\Framework.X.debug.obj
+start_initialization 1694 0 CODE 0 cinit dist/UseC18/debug\Framework.X.debug.obj
+i2c_int_handler@msg_ready 94 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_init_i2c 1462 0 CODE 0 text21 dist/UseC18/debug\Framework.X.debug.obj
+__end_ofi1_memcpy 1616 0 CODE 0 text28 dist/UseC18/debug\Framework.X.debug.obj
+main@last_reg_recvd 20F 0 BANK2 1 cstackBANK2 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_ReadADC 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_ofi2_memcpy 1656 0 CODE 0 text49 dist/UseC18/debug\Framework.X.debug.obj
+_init_i2c 1400 0 CODE 0 text21 dist/UseC18/debug\Framework.X.debug.obj
+__initialization 1694 0 CODE 0 cinit dist/UseC18/debug\Framework.X.debug.obj
+start_i2c_slave_reply@msg A8 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_in_low_int 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+timer0_int_handler@val 97 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__activetblptr 2 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__end_of_adc_int_handler 154C 0 CODE 0 text38 dist/UseC18/debug\Framework.X.debug.obj
+?_init_timer1_lthread A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_ofi2_check_msg 1856 0 CODE 0 text34 dist/UseC18/debug\Framework.X.debug.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+timer0_int_handler@length 93 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__end_of_i2c_int_handler 700 0 CODE 0 text45 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_i2c_configure_slave 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+Delay1KTCYx@unit A7 0 BANK0 1 cstackBANK0 dist/UseC18/debug\Framework.X.debug.obj
+__size_of_handle_start 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+__size_of_memcpy 0 0 ABS 0 - dist/UseC18/debug\Framework.X.debug.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 6 1 CODE
+intcode 0 8 8 10 1 CODE
+intcodelo 0 18 18 1932 1 CODE
+config 0 7FF8 7FF8 6 1 CONFIG
+cstackCOMRAM 1 1 1 52 1 COMRAM
+cstackBANK0 1 80 80 49 1 BANK0
+bssBANK1 1 100 100 D8 1 BANK1
+cstackBANK2 1 200 200 32 1 BANK2
+bssBIGRAM 1 232 232 190 1 BIGRAM

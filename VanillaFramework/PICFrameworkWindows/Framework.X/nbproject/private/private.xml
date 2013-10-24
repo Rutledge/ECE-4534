@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/main.c</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/interrupts.c</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/user_interrupts.c</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/user_interrupts.h</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/timer1_thread.c</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/my_i2c.c</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/messages.h</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/messages.c</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/timer0_thread.h</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/my_uart.h</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/uart_thread.h</file>
+        <file>file:/C:/Users/Ben/Dropbox/ECE-4534/VanillaFramework/PICFrameworkWindows/src/timer1_thread.h</file>
+    </open-files>
+</project-private>

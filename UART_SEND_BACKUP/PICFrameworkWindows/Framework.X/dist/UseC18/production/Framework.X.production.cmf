@@ -1,0 +1,1261 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Ben\AppData\Local\Temp\s2no.obj
+end_init CODE 0 C8 C8 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 7FF8 7FF8 6 1
+$dist/UseC18/production\Framework.X.production.obj
+intcodelo CODE 0 18 18 B0 1
+intcode CODE 0 8 8 10 1
+text51 CODE 0 160E 160E 48 1
+text50 CODE 0 E5E E5E F2 1
+text49 CODE 0 1966 1966 28 1
+text48 CODE 0 1020 1020 C4 1
+text47 CODE 0 CC CC 658 1
+text46 CODE 0 1A60 1A60 12 1
+text45 CODE 0 B2C B2C 12C 1
+text44 CODE 0 18C0 18C0 2C 1
+text43 CODE 0 10E4 10E4 B4 1
+text42 CODE 0 1A98 1A98 A 1
+text41 CODE 0 1AB0 1AB0 6 1
+text40 CODE 0 180A 180A 30 1
+text39 CODE 0 19FA 19FA 1E 1
+text38 CODE 0 1496 1496 76 1
+text37 CODE 0 1AAA 1AAA 6 1
+text36 CODE 0 1A82 1A82 C 1
+text35 CODE 0 183A 183A 2E 1
+text34 CODE 0 19B4 19B4 24 1
+text33 CODE 0 15C0 15C0 4E 1
+intcode_body CODE 0 12F2 12F2 A8 1
+text31 CODE 0 1720 1720 40 1
+text30 CODE 0 1248 1248 AA 1
+text29 CODE 0 19D8 19D8 22 1
+text28 CODE 0 1A4E 1A4E 12 1
+text27 CODE 0 18EC 18EC 2A 1
+text26 CODE 0 F50 F50 D0 1
+text25 CODE 0 198E 198E 26 1
+text24 CODE 0 1A72 1A72 10 1
+text23 CODE 0 193E 193E 28 1
+text21 CODE 0 1AA2 1AA2 8 1
+text20 CODE 0 1A3C 1A3C 12 1
+text19 CODE 0 141C 141C 7A 1
+text18 CODE 0 150C 150C 66 1
+text17 CODE 0 139A 139A 82 1
+text16 CODE 0 1A2A 1A2A 12 1
+text15 CODE 0 1656 1656 46 1
+text14 CODE 0 169C 169C 44 1
+text13 CODE 0 17D4 17D4 36 1
+text12 CODE 0 1A18 1A18 12 1
+text11 CODE 0 1198 1198 B0 1
+text10 CODE 0 1572 1572 4E 1
+text9 CODE 0 A00 A00 12C 1
+text8 CODE 0 1894 1894 2C 1
+text7 CODE 0 1A8E 1A8E A 1
+text6 CODE 0 C58 C58 10A 1
+text5 CODE 0 1868 1868 2C 1
+text4 CODE 0 D62 D62 FC 1
+text3 CODE 0 1916 1916 28 1
+text2 CODE 0 16E0 16E0 40 1
+text1 CODE 0 1760 1760 3E 1
+cstackCOMRAM COMRAM 1 1 1 36 1
+cstackBANK0 BANK0 1 80 80 50 1
+cstackBANK1 BANK1 1 1D8 1D8 18 1
+bssBANK2 BANK2 1 200 200 32 1
+bssBANK1 BANK1 1 100 100 D8 1
+bssBANK0 BANK0 1 D0 D0 3 1
+bssCOMRAM COMRAM 1 37 37 1A 1
+cinit CODE 0 179E 179E 36 1
+text0 CODE 0 724 724 2DC 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 000D3-000FF 1
+BANK1 001F0-001FF 1
+BANK2 00232-002FF 1
+BANK3 00300-003FF 1
+BIGRAM 00051-0007F 1
+BIGRAM 000D3-000FF 1
+BIGRAM 001F0-001FF 1
+BIGRAM 00232-003FF 1
+CODE 00004-00007 1
+CODE 01AB6-07FF7 1
+COMRAM 00051-0007F 1
+CONST 00004-00007 1
+CONST 01AB6-07FF7 1
+MEDIUMCONST 01AB6-07FF7 1
+RAM 000D3-000FF 1
+RAM 001F0-001FF 1
+RAM 00232-003FF 1
+SFR 00F80-00FFF 1
+SMALLCONST 01AB6-07FF7 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/UseC18/production\Framework.X.production.obj
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":142 5C intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":143 64 intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":144 66 intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":153 6C intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":155 7C intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":161 82 intcodelo CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":105 CC text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":106 DC text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":107 EC text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":108 FC text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":109 10C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":113 11C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":114 120 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":118 122 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":119 138 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":120 148 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":121 15C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":124 172 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":125 176 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":126 17A text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":132 18A text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":137 194 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":138 198 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":140 1A0 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":141 1B8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":142 1C8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":150 1D6 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":153 1DA text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":154 1EE text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":155 1F8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":156 1FC text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":157 20C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":158 20E text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":159 222 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":161 238 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":163 23A text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":164 244 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":165 258 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":166 25C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":167 260 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":169 276 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":175 28E text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":176 2A2 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":177 2B8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":184 2CE text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":185 302 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":186 340 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":187 354 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":190 362 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":197 366 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":199 36A text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":200 37E text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":201 388 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":202 38C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":203 3C4 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":206 3DA text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":207 3EE text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":208 404 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":211 41C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":213 42C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":214 42E text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":215 438 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":216 44C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":217 450 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":218 488 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":219 49C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":220 49E text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":221 4A2 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":222 4B8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":223 4C8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":225 4D8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":226 4E8 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":229 4EA text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":133 500 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":239 52C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":241 53E text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":242 540 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":247 542 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":248 562 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":249 578 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":250 58C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":253 5A2 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":254 5AC text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":255 5F4 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":257 632 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":258 63A text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":259 652 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":260 66C text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":261 686 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":262 6A0 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":264 6D6 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":266 6EC text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":268 6F6 text47 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":89 724 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":104 732 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":105 736 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":115 738 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":118 74E text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":121 752 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":122 756 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":140 75A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":145 75E text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":147 760 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":149 762 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":153 764 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":157 786 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":158 788 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":215 78A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":222 78E text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":223 7CC text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":232 7D6 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":233 822 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":240 824 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":241 828 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":255 82A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":258 83A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":262 84A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":263 852 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":264 866 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":270 876 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":271 886 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":276 88E text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":277 89E text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":278 8AE text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":252 8B0 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":281 8C8 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":282 8E2 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":229 8E4 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":293 902 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":294 940 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":303 94A text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":304 996 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":309 998 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":310 9E4 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/main.c":300 9E6 text0 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":72 A00 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":73 A1A text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":74 A3C text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":76 A4A text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":77 A66 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":80 A6A text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":81 A90 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":87 AC4 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":89 AF6 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":91 B14 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":92 B20 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":94 B28 text9 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":72 B2C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":73 B46 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":74 B68 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":76 B76 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":77 B92 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":80 B96 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":81 BBC text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":87 BF0 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":89 C22 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":91 C40 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":92 C4C text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":94 C54 text45 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":58 C58 text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":59 C70 text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":58 CE0 text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":61 D1A text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":62 D32 text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":65 D48 text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":68 D5E text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":70 D60 text6 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":28 D62 text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":38 D70 text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":39 D8A text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":41 DAC text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":42 DBA text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":46 DBE text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":47 DD6 text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":55 DEE text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":56 E1C text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":59 E4E text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":60 E5A text4 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":28 E5E text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":38 E6C text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":39 E86 text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":41 EA8 text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":42 EB6 text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":46 EBA text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":47 ED2 text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":55 EEA text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":56 F12 text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":59 F40 text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":60 F4C text50 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":72 F50 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":73 F60 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":74 F70 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":76 F7E text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":77 F90 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":80 F94 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":81 FAA text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":87 FD2 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":89 FF4 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":91 100C text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":92 1018 text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":94 101C text26 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":75 1020 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":76 1036 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":78 104C text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":79 1052 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":82 1056 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":83 106C text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":84 1080 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":85 1096 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":86 1098 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":87 109C text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":88 10B2 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":89 10B4 text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/my_i2c.c":93 10CC text48 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":24 10E4 text43 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":26 10FE text43 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":28 110A text43 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":29 1152 text43 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":30 1160 text43 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":259 1198 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":262 11AA text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":263 11AC text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":265 11B8 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":266 11D4 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":267 11E0 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":270 11E4 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":271 1200 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":272 120C text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":275 1210 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":276 1224 text11 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":28 1248 text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":38 124E text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":39 125E text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":41 126E text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":42 127C text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":46 1280 text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":47 1290 text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":55 12A0 text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":56 12C0 text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":59 12E2 text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":60 12EE text30 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":86 12F2 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":91 131E intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":93 1326 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":95 1328 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":99 132E intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":100 1336 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":102 1338 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":105 133E intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":107 1346 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":108 1348 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":112 134E intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":114 1356 intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":125 135C intcode_body CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":126 1360 intcode_body CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":75 139A text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":76 139E text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":78 13A2 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":79 13A8 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":81 13AA text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":83 13B2 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":84 13B4 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":87 13B6 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":88 13BC text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":90 13BE text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":91 13C6 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":93 13CA text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":95 13CC text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":96 13D2 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":98 13D4 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":100 13D6 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":101 13DC text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":103 13DE text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":104 13E6 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":106 13EA text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":108 13EC text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":110 13EE text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":111 13F6 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":113 13FA text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":115 13FC text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":116 1400 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":118 1408 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":119 140A text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":137 140C text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":138 1410 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uopen.c":139 1418 text17 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":17 141C text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":18 1432 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":19 1448 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":20 1464 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":19 1484 text19 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":62 1496 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":63 14AC text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":64 14E2 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":65 14E6 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":68 14F0 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":69 14FE text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":70 1502 text38 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":195 150C text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":196 1518 text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":197 152E text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":198 1544 text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":199 155A text18 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":200 1570 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":24 1572 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":25 157A text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1582 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":27 1584 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 15A8 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":32 15BC text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 15BE text10 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":230 15C0 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":235 15C6 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":240 15D2 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":247 15DE text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":250 15F4 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":253 1608 text33 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":254 160C text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":24 160E text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":25 1616 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 161E text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":27 1620 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1644 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":32 1652 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1654 text51 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":34 1656 text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":35 165A text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":36 166A text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":37 167C text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":39 168C text15 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":44 169C text14 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":45 16C0 text14 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":47 16D0 text14 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer1_thread.c":33 16E0 text2 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer1_thread.c":36 16E6 text2 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer1_thread.c":38 171C text2 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer1_thread.c":49 171E text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":24 1720 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":25 1728 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 1730 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":27 1732 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 174E text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":32 175C text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\memcpy.c":26 175E text31 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/uart_thread.c":10 1760 text1 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/uart_thread.c":11 176E text1 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/uart_thread.c":14 177C text1 CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2951 179E cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2952 17A2 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2954 17A4 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2955 17A6 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2956 17A8 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2959 17AA cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2960 17AE cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2962 17B0 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2963 17B2 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2964 17B4 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2967 17B6 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2968 17B8 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2969 17BA cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2970 17BC cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2973 17BE cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2974 17C2 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2976 17C4 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2977 17C6 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2978 17C8 cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2986 17CA cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2987 17CC cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2988 17CE cinit CODE
+"C:\Users\Ben\AppData\Local\Temp\s2no.":2989 17D0 cinit CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":223 17D4 text13 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":91 180A text40 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":98 1816 text40 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":99 1826 text40 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":102 182C text40 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":103 1834 text40 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":34 183A text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":35 183E text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":36 1848 text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":37 1854 text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":39 185E text35 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":118 1868 text5 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":141 1894 text8 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":189 18C0 text44 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":47 18EC text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":50 1908 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":53 1914 text27 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":180 1916 text3 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":80 193E text23 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":82 195A text23 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":83 1962 text23 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/user_interrupts.c":87 1964 text23 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":132 1966 text49 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":189 198E text25 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":223 19B4 text34 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":109 19D8 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":19 19FA text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":21 19FE text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":23 1A02 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":24 1A04 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":25 1A06 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":28 1A08 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":29 1A0A text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":31 1A0C text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":32 1A0E text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":34 1A10 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uread.c":36 1A14 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\d1ktcyx.c":11 1A18 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\d1ktcyx.c":12 1A20 text12 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":26 1A2A text16 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer1_thread.c":7 1A3C text20 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer1_thread.c":10 1A4C text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":18 1A4E text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":20 1A56 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":21 1A5A text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1write.c":22 1A5E text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":20 1A60 text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":22 1A68 text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":23 1A6C text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t0write.c":24 1A70 text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uwrite.c":15 1A72 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uwrite.c":17 1A76 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uwrite.c":18 1A78 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uwrite.c":19 1A7A text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uwrite.c":22 1A7C text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\USART\uwrite.c":23 1A80 text24 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":26 1A82 text36 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer0_thread.c":12 1A8E text7 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/timer0_thread.c":16 1A96 text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\ADC\adcread.c":26 1A98 text42 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":20 1AA2 text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":21 1AA4 text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":22 1AA6 text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/interrupts.c":23 1AA8 text21 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":204 1AAA text37 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":213 1AAC text37 CODE
+"C:\Users\Ben\Dropbox\ECE-4534\UART_SEND\PICFrameworkWindows/src/messages.c":218 1AAE text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1close.c":17 1AB0 text41 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1close.c":18 1AB2 text41 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic18\plib\Timers\t1close.c":19 1AB4 text41 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_ToMainHigh_sendmsg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+i1recv_msg@maxlength D 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2recv_msg@maxlength 86 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_ofi1_send_msg 12F2 0 CODE 0 text30 dist/UseC18/production\Framework.X.production.obj
+i1send_msg@tlength 12 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2send_msg@tlength 8A 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_ToMainHigh_MQ 16C 0 BANK1 1 bssBANK1 dist/UseC18/production\Framework.X.production.obj
+__end_of_OpenUSART 141C 0 CODE 0 text17 dist/UseC18/production\Framework.X.production.obj
+start_i2c_slave_reply@length AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i1recv_msg@tlength 15 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2recv_msg@tlength 8E 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__S0 7FFE 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__S1 232 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_ofi2_send_msg F50 0 CODE 0 text50 dist/UseC18/production\Framework.X.production.obj
+__end_of_start_i2c_slave_reply D62 0 CODE 0 text6 dist/UseC18/production\Framework.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/UseC18/production\Framework.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/UseC18/production\Framework.X.production.obj
+ToMainLow_recvmsg@maxlength C5 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i1memcpy@d 7 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2memcpy@d 80 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+?_WriteUSART 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__end_of_ToMainHigh_sendmsg 198E 0 CODE 0 text49 dist/UseC18/production\Framework.X.production.obj
+__end_of_timer1_lthread 1720 0 CODE 0 text2 dist/UseC18/production\Framework.X.production.obj
+_init_timer1_lthread 1A3C 0 CODE 0 text20 dist/UseC18/production\Framework.X.production.obj
+_LATB F8A 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_ToMainHigh_recvmsg 18C0 0 CODE 0 text8 dist/UseC18/production\Framework.X.production.obj
+__size_of_FromMainHigh_recvmsg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_ToMainHigh_recvmsg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_main 724 0 CODE 0 text0 dist/UseC18/production\Framework.X.production.obj
+_timer0_int_handler 10E4 0 CODE 0 text43 dist/UseC18/production\Framework.X.production.obj
+i2c_int_handler@overrun_error 99 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i2c_int_handler@data_written 98 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_timer1_int_handler 18EC 0 CODE 0 text27 dist/UseC18/production\Framework.X.production.obj
+start C8 0 CODE 0 init C:\Users\Ben\AppData\Local\Temp\s2no.obj
+_test 3D 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+_MQ_Main_Willing_to_block 41 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+_start_i2c_slave_reply C58 0 CODE 0 text6 dist/UseC18/production\Framework.X.production.obj
+i1memcpy@d1 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2memcpy@d1 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+_FromMainHigh_MQ 100 0 BANK1 1 bssBANK1 dist/UseC18/production\Framework.X.production.obj
+__end_of_timer0_int_handler 1198 0 CODE 0 text43 dist/UseC18/production\Framework.X.production.obj
+__end_ofi2_FromMainHigh_recvmsg 18EC 0 CODE 0 text44 dist/UseC18/production\Framework.X.production.obj
+_TMR0H FD7 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_TMR1H FCF 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+WriteUSART@data 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+_TMR0L FD6 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_TMR1L FCE 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+?_in_high_int AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_RCREG FAE 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_RCSTA FAB 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_TRISB F93 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_TXREG FAD 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_SPBRG FAF 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/UseC18/production\Framework.X.production.obj
+_TXSTA FAC 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/UseC18/production\Framework.X.production.obj
+__HRAM 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__LRAM 1 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+i1send_msg@qmsg 15 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2send_msg@qmsg 8D 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i1send_msg@msgtype E 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2send_msg@msgtype 87 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i1recv_msg@qmsg 17 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2recv_msg@qmsg 90 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hconfig 7FFE 0 CONFIG 0 config dist/UseC18/production\Framework.X.production.obj
+__Lconfig 7FF8 0 CONFIG 0 config dist/UseC18/production\Framework.X.production.obj
+i1recv_msg@msgtype E 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2recv_msg@msgtype 87 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i2FromMainHigh_recvmsg@msgtype 93 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_ADCValue 37 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+WriteTimer0@timer 32 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_CloseTimer1 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+?i1_send_msg B 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+?i2_send_msg 84 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/UseC18/production\Framework.X.production.obj
+WriteTimer0@timer0 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/UseC18/production\Framework.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/UseC18/production\Framework.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/UseC18/production\Framework.X.production.obj
+i1memcpy@n 5 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2memcpy@n 34 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2_check_msg 19B4 0 CODE 0 text34 dist/UseC18/production\Framework.X.production.obj
+timer0_int_handler@msgtype 9B 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_enter_sleep_mode 1AAA 0 CODE 0 text37 dist/UseC18/production\Framework.X.production.obj
+__Hram 0 0 ABS 0 ram dist/UseC18/production\Framework.X.production.obj
+__Lram 0 0 ABS 0 ram dist/UseC18/production\Framework.X.production.obj
+__size_of_WriteUSART 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_last_reg_recvd 43 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_ReadUSART 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/UseC18/production\Framework.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/UseC18/production\Framework.X.production.obj
+_send_msg D62 0 CODE 0 text4 dist/UseC18/production\Framework.X.production.obj
+?_in_main B1 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/UseC18/production\Framework.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/UseC18/production\Framework.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/UseC18/production\Framework.X.production.obj
+_recv_msg A00 0 CODE 0 text9 dist/UseC18/production\Framework.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/UseC18/production\Framework.X.production.obj
+i1send_msg@length D 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2send_msg@length 86 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/UseC18/production\Framework.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/UseC18/production\Framework.X.production.obj
+?_init_queue AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+WriteTimer1@timer 3 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_timer1_int_handler 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+WriteTimer1@timer1 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_enter_sleep_mode 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+?_ToMainHigh_sendmsg 8F 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+?i1_recv_msg B 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+?i2_recv_msg 84 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_ofi2_in_high_int 1A8E 0 CODE 0 text36 dist/UseC18/production\Framework.X.production.obj
+uart_lthread@length B1 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+init_queue@i B0 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_init_timer1_lthread 1A4E 0 CODE 0 text20 dist/UseC18/production\Framework.X.production.obj
+i2c_int_handler@msg_to_send 9A 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_IPR1bits F9F 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+timer0_lthread@msgbuffer B3 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_LATBbits F8A 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/UseC18/production\Framework.X.production.obj
+_SSPADD FC8 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/UseC18/production\Framework.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+i1memcpy@s 9 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2memcpy@s 82 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+?_start_i2c_slave_reply AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/UseC18/production\Framework.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/UseC18/production\Framework.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/UseC18/production\Framework.X.production.obj
+i2_in_high_int 1A82 0 CODE 0 text36 dist/UseC18/production\Framework.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/UseC18/production\Framework.X.production.obj
+__Hramtop 400 0 RAM 0 ramtop dist/UseC18/production\Framework.X.production.obj
+__Lramtop 400 0 RAM 0 ramtop dist/UseC18/production\Framework.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/UseC18/production\Framework.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/UseC18/production\Framework.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/UseC18/production\Framework.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/UseC18/production\Framework.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/UseC18/production\Framework.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/UseC18/production\Framework.X.production.obj
+_SPBRGH FB0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/UseC18/production\Framework.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/UseC18/production\Framework.X.production.obj
+main@uthread_data 1E5 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+i2_in_low_int 183A 0 CODE 0 text35 dist/UseC18/production\Framework.X.production.obj
+_timer0_lthread 1A8E 0 CODE 0 text7 dist/UseC18/production\Framework.X.production.obj
+__Hintcode 18 0 CODE 0 intcode dist/UseC18/production\Framework.X.production.obj
+_SSPBUF FC9 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/UseC18/production\Framework.X.production.obj
+_timer1_lthread 16E0 0 CODE 0 text2 dist/UseC18/production\Framework.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/UseC18/production\Framework.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/UseC18/production\Framework.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/UseC18/production\Framework.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/UseC18/production\Framework.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/UseC18/production\Framework.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+main@msgbuffer 1DA 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+uart_rx_int_handler@x 95 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/UseC18/production\Framework.X.production.obj
+send_msg@slot C0 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/UseC18/production\Framework.X.production.obj
+FromMainHigh_sendmsg@data C5 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+recv_msg@slot C0 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i1_memcpy 1720 0 CODE 0 text31 dist/UseC18/production\Framework.X.production.obj
+i2_memcpy 160E 0 CODE 0 text51 dist/UseC18/production\Framework.X.production.obj
+?_ToMainLow_recvmsg C5 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_ofi2_FromMainHigh_recvmsg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+main@msgtype 1EE 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__size_of_in_high_int 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_block_on_To_msgqueues 1198 0 CODE 0 text11 dist/UseC18/production\Framework.X.production.obj
+i1memcpy@s1 3 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2memcpy@s1 32 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__end_of_Delay1KTCYx 1A2A 0 CODE 0 text12 dist/UseC18/production\Framework.X.production.obj
+__end_of_enable_interrupts 1AAA 0 CODE 0 text21 dist/UseC18/production\Framework.X.production.obj
+i2c_int_handler@i2c_data 9B 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_ofi1_recv_msg 1020 0 CODE 0 text26 dist/UseC18/production\Framework.X.production.obj
+__Hdata 0 0 ABS 0 data dist/UseC18/production\Framework.X.production.obj
+__Ldata 0 0 ABS 0 data dist/UseC18/production\Framework.X.production.obj
+?i2_check_msg 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+send_msg@qmsg C1 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+recv_msg@qmsg C3 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_block_on_To_msgqueues 1248 0 CODE 0 text11 dist/UseC18/production\Framework.X.production.obj
+__end_ofi2_recv_msg C58 0 CODE 0 text45 dist/UseC18/production\Framework.X.production.obj
+?_send_msg B7 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_check_msg 17D4 0 CODE 0 text13 dist/UseC18/production\Framework.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_length 3B 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_send_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/UseC18/production\Framework.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/UseC18/production\Framework.X.production.obj
+?_recv_msg B7 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/UseC18/production\Framework.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/UseC18/production\Framework.X.production.obj
+__Hinit C8 0 CODE 0 init dist/UseC18/production\Framework.X.production.obj
+__Linit C8 0 CODE 0 init dist/UseC18/production\Framework.X.production.obj
+__Hintcodelo C8 0 CODE 0 intcodelo dist/UseC18/production\Framework.X.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/UseC18/production\Framework.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/UseC18/production\Framework.X.production.obj
+__end_of_main A00 0 CODE 0 text0 dist/UseC18/production\Framework.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/UseC18/production\Framework.X.production.obj
+__pintcodelo 18 0 CODE 0 intcodelo dist/UseC18/production\Framework.X.production.obj
+__end_of_CloseTimer1 1AB6 0 CODE 0 text41 dist/UseC18/production\Framework.X.production.obj
+_ic_ptr D0 0 BANK0 1 bssBANK0 dist/UseC18/production\Framework.X.production.obj
+FromMainHigh_recvmsg@maxlength 19 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+_uc_ptr 3F 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__end_of_check_msg 180A 0 CODE 0 text13 dist/UseC18/production\Framework.X.production.obj
+__Htext 0 0 ABS 0 text dist/UseC18/production\Framework.X.production.obj
+__Ltext 0 0 ABS 0 text dist/UseC18/production\Framework.X.production.obj
+_memcpy 1572 0 CODE 0 text10 dist/UseC18/production\Framework.X.production.obj
+?_FromMainHigh_recvmsg 19 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_Delay1KTCYx 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+i1send_msg@qptr B 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2send_msg@qptr 84 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_ofi1_send_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+?_Delay1KTCYx AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+end_of_initialization 17CA 0 CODE 0 cinit dist/UseC18/production\Framework.X.production.obj
+ToMainHigh_sendmsg@length 8F 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+init_queue@qptr AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+OpenUSART@spbrg AE 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_uart_lthread 1760 0 CODE 0 text1 dist/UseC18/production\Framework.X.production.obj
+i1recv_msg@qptr B 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2recv_msg@qptr 84 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_msgbuffer 45 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+send_msg@qptr B7 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+recv_msg@qptr B7 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_in_low_int 169C 0 CODE 0 text15 dist/UseC18/production\Framework.X.production.obj
+__size_ofi2_send_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_SSPCON1 FC6 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_adc_int_handler 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_SSPCON2 FC5 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_ToMainLow_sendmsg 19D8 0 CODE 0 text29 dist/UseC18/production\Framework.X.production.obj
+__end_of_handle_start 10E4 0 CODE 0 text48 dist/UseC18/production\Framework.X.production.obj
+__size_of_timer1_lthread 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_handle_start 1020 0 CODE 0 text48 dist/UseC18/production\Framework.X.production.obj
+__size_of_uart_rx_int_handler 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_i2c_int_handler 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+uart_lthread@msgtype AF 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+FromMainHigh_sendmsg@msgtype C4 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_RCSTAbits FAB 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_TRISCbits F94 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_TXSTAbits FAC 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_T1CONbits FCD 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_SleepIfOkay 15C0 0 CODE 0 text33 dist/UseC18/production\Framework.X.production.obj
+_ReadADC 1A98 0 CODE 0 text42 dist/UseC18/production\Framework.X.production.obj
+_ToMainHigh_sendmsg 1966 0 CODE 0 text49 dist/UseC18/production\Framework.X.production.obj
+_i2c_int_handler CC 0 CODE 0 text47 dist/UseC18/production\Framework.X.production.obj
+_adc_int_handler 180A 0 CODE 0 text40 dist/UseC18/production\Framework.X.production.obj
+?i2_in_high_int 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/UseC18/production\Framework.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/UseC18/production\Framework.X.production.obj
+?i2_in_low_int 32 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+?_timer0_lthread AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_InterruptHandlerLow 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+?_timer1_lthread C7 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+send_msg@data BB 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/UseC18/production\Framework.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/UseC18/production\Framework.X.production.obj
+recv_msg@data BC 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/UseC18/production\Framework.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/UseC18/production\Framework.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/UseC18/production\Framework.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/UseC18/production\Framework.X.production.obj
+__size_of_ToMainLow_sendmsg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/UseC18/production\Framework.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/UseC18/production\Framework.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/UseC18/production\Framework.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/UseC18/production\Framework.X.production.obj
+__CFG_FOSC2$ON 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_recv_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_uart_tx_int_handler 1966 0 CODE 0 text23 dist/UseC18/production\Framework.X.production.obj
+ToMainLow_sendmsg@data 19 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Hpowerup C8 0 CODE 0 powerup dist/UseC18/production\Framework.X.production.obj
+_SSPSTAT FC7 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Lpowerup C8 0 CODE 0 powerup dist/UseC18/production\Framework.X.production.obj
+?_ToMainHigh_recvmsg C5 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_timer1_int_handler 1916 0 CODE 0 text27 dist/UseC18/production\Framework.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/UseC18/production\Framework.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/UseC18/production\Framework.X.production.obj
+_SSPCON1bits FC6 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/UseC18/production\Framework.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/UseC18/production\Framework.X.production.obj
+__ptext0 724 0 CODE 0 text0 dist/UseC18/production\Framework.X.production.obj
+_SSPCON2bits FC5 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/UseC18/production\Framework.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/UseC18/production\Framework.X.production.obj
+__ptext1 1760 0 CODE 0 text1 dist/UseC18/production\Framework.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/UseC18/production\Framework.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/UseC18/production\Framework.X.production.obj
+__ptext2 16E0 0 CODE 0 text2 dist/UseC18/production\Framework.X.production.obj
+ToMainLow_sendmsg@msgtype 18 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+ToMainHigh_sendmsg@data 91 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/UseC18/production\Framework.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/UseC18/production\Framework.X.production.obj
+__ptext3 1916 0 CODE 0 text3 dist/UseC18/production\Framework.X.production.obj
+?_WriteTimer0 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_ToMainLow_recvmsg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/UseC18/production\Framework.X.production.obj
+__size_of_SleepIfOkay 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/UseC18/production\Framework.X.production.obj
+__ptext4 D62 0 CODE 0 text4 dist/UseC18/production\Framework.X.production.obj
+?i1_memcpy 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+?i2_memcpy 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/UseC18/production\Framework.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/UseC18/production\Framework.X.production.obj
+__ptext5 1868 0 CODE 0 text5 dist/UseC18/production\Framework.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/UseC18/production\Framework.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/UseC18/production\Framework.X.production.obj
+__ptext6 C58 0 CODE 0 text6 dist/UseC18/production\Framework.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+OpenUSART@config AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/UseC18/production\Framework.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/UseC18/production\Framework.X.production.obj
+__ptext7 1A8E 0 CODE 0 text7 dist/UseC18/production\Framework.X.production.obj
+send_msg@tlength BE 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__pbssCOMRAM 37 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/UseC18/production\Framework.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/UseC18/production\Framework.X.production.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__ptext8 1894 0 CODE 0 text8 dist/UseC18/production\Framework.X.production.obj
+recv_msg@tlength C1 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__ptext9 A00 0 CODE 0 text9 dist/UseC18/production\Framework.X.production.obj
+__pcstackBANK1 1D8 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/UseC18/production\Framework.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/UseC18/production\Framework.X.production.obj
+__size_of_timer0_int_handler 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_WriteTimer0 1A72 0 CODE 0 text46 dist/UseC18/production\Framework.X.production.obj
+__end_of_WriteTimer1 1A60 0 CODE 0 text28 dist/UseC18/production\Framework.X.production.obj
+uart_lthread@msgbuffer B3 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_WriteTimer0 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_WriteTimer1 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+ToMainHigh_sendmsg@msgtype 90 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+FromMainHigh_recvmsg@data 1C 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_ofi2_in_low_int 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_ToMainLow_sendmsg 19FA 0 CODE 0 text29 dist/UseC18/production\Framework.X.production.obj
+_OSCTUNEbits F9B 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_memcpy 15C0 0 CODE 0 text10 dist/UseC18/production\Framework.X.production.obj
+__end_of__initialization 17CA 0 CODE 0 cinit dist/UseC18/production\Framework.X.production.obj
+__end_of_in_main 16E0 0 CODE 0 text14 dist/UseC18/production\Framework.X.production.obj
+__CFG_CCP2MX$DEFAULT 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_ToMainLow_recvmsg 1894 0 CODE 0 text5 dist/UseC18/production\Framework.X.production.obj
+memcpy@d B3 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_InterruptHandlerLow 18 0 CODE 0 intcodelo dist/UseC18/production\Framework.X.production.obj
+?_OpenUSART AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_WriteUSART 1A72 0 CODE 0 text24 dist/UseC18/production\Framework.X.production.obj
+_SSPSTATbits FC7 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_init_queues 150C 0 CODE 0 text18 dist/UseC18/production\Framework.X.production.obj
+i2FromMainHigh_recvmsg@data 95 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+?_WriteTimer1 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+init_timer1_lthread@tptr AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+memcpy@n B1 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_USART_Status 42 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+ReadUSART@data 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+_InterruptHandlerHigh 8 0 CODE 0 intcode dist/UseC18/production\Framework.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/UseC18/production\Framework.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/UseC18/production\Framework.X.production.obj
+memcpy@s B5 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/UseC18/production\Framework.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/UseC18/production\Framework.X.production.obj
+_in_high_int 1A2A 0 CODE 0 text16 dist/UseC18/production\Framework.X.production.obj
+_message D2 0 BANK0 1 bssBANK0 dist/UseC18/production\Framework.X.production.obj
+ToMainLow_recvmsg@data C8 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc dist/UseC18/production\Framework.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc dist/UseC18/production\Framework.X.production.obj
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_ReadADC 1AA2 0 CODE 0 text42 dist/UseC18/production\Framework.X.production.obj
+int_func 12F2 0 CODE 0 intcode_body dist/UseC18/production\Framework.X.production.obj
+send_msg@length B9 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_init_queue 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/UseC18/production\Framework.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/UseC18/production\Framework.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i1_send_msg 1248 0 CODE 0 text30 dist/UseC18/production\Framework.X.production.obj
+i2_send_msg E5E 0 CODE 0 text50 dist/UseC18/production\Framework.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_InterruptHandlerHigh 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+?_check_msg AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+ToMainLow_recvmsg@msgtype C6 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+_in_main 169C 0 CODE 0 text14 dist/UseC18/production\Framework.X.production.obj
+_init_queue 141C 0 CODE 0 text19 dist/UseC18/production\Framework.X.production.obj
+_msgtype 50 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/UseC18/production\Framework.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/UseC18/production\Framework.X.production.obj
+i1_recv_msg F50 0 CODE 0 text26 dist/UseC18/production\Framework.X.production.obj
+i2_recv_msg B2C 0 CODE 0 text45 dist/UseC18/production\Framework.X.production.obj
+__size_of_start_i2c_slave_reply 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/UseC18/production\Framework.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/UseC18/production\Framework.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/UseC18/production\Framework.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/UseC18/production\Framework.X.production.obj
+__pcinit 179E 0 CODE 0 cinit dist/UseC18/production\Framework.X.production.obj
+main@length 1EF 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__ramtop 400 0 RAM 0 ramtop C:\Users\Ben\AppData\Local\Temp\s2no.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Ben\AppData\Local\Temp\s2no.obj
+?_in_low_int AF 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_init_queues 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_ofi2_in_low_int 1868 0 CODE 0 text35 dist/UseC18/production\Framework.X.production.obj
+_ToMainLow_recvmsg 1868 0 CODE 0 text5 dist/UseC18/production\Framework.X.production.obj
+__Hconst 0 0 CODE 0 const dist/UseC18/production\Framework.X.production.obj
+__Lconst 0 0 CODE 0 const dist/UseC18/production\Framework.X.production.obj
+?_memcpy AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_OpenUSART 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+i1send_msg@data F 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2send_msg@data 88 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i1recv_msg@data 10 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2recv_msg@data 89 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+FromMainHigh_recvmsg@msgtype 1A 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__end_of_FromMainHigh_sendmsg 193E 0 CODE 0 text3 dist/UseC18/production\Framework.X.production.obj
+i2check_msg@qptr 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_of_check_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_FromMainHigh_recvmsg 198E 0 CODE 0 text25 dist/UseC18/production\Framework.X.production.obj
+?_uart_lthread AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_uart_lthread 179E 0 CODE 0 text1 dist/UseC18/production\Framework.X.production.obj
+__size_of_in_main 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+ToMainHigh_recvmsg@maxlength C5 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_testbuffer 200 0 BANK2 1 bssBANK2 dist/UseC18/production\Framework.X.production.obj
+check_msg@qptr AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_Delay1KTCYx 1A18 0 CODE 0 text12 dist/UseC18/production\Framework.X.production.obj
+__end_of_in_high_int 1A3C 0 CODE 0 text16 dist/UseC18/production\Framework.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/UseC18/production\Framework.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_WriteUSART 1A82 0 CODE 0 text24 dist/UseC18/production\Framework.X.production.obj
+__pbssBANK0 D0 0 BANK0 1 bssBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_timer0_lthread 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+timer0_lthread@msgval B5 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_ToMainLow_MQ 1A2 0 BANK1 1 bssBANK1 dist/UseC18/production\Framework.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/UseC18/production\Framework.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/UseC18/production\Framework.X.production.obj
+handle_start@data_read 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__end_of_timer0_lthread 1A98 0 CODE 0 text7 dist/UseC18/production\Framework.X.production.obj
+__end_of_InterruptHandlerLow C8 0 CODE 0 intcodelo dist/UseC18/production\Framework.X.production.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/UseC18/production\Framework.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/UseC18/production\Framework.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/UseC18/production\Framework.X.production.obj
+__end_of_enter_sleep_mode 1AB0 0 CODE 0 text37 dist/UseC18/production\Framework.X.production.obj
+__size_of_uart_lthread 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/UseC18/production\Framework.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/UseC18/production\Framework.X.production.obj
+__ptext10 1572 0 CODE 0 text10 dist/UseC18/production\Framework.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/UseC18/production\Framework.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/UseC18/production\Framework.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/UseC18/production\Framework.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/UseC18/production\Framework.X.production.obj
+__ptext20 1A3C 0 CODE 0 text20 dist/UseC18/production\Framework.X.production.obj
+ToMainHigh_recvmsg@data C8 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/UseC18/production\Framework.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/UseC18/production\Framework.X.production.obj
+recv_msg@maxlength B9 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/UseC18/production\Framework.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/UseC18/production\Framework.X.production.obj
+__ptext11 1198 0 CODE 0 text11 dist/UseC18/production\Framework.X.production.obj
+__ptext30 1248 0 CODE 0 text30 dist/UseC18/production\Framework.X.production.obj
+__Htext50 0 0 ABS 0 text50 dist/UseC18/production\Framework.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/UseC18/production\Framework.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/UseC18/production\Framework.X.production.obj
+__Ltext50 0 0 ABS 0 text50 dist/UseC18/production\Framework.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/UseC18/production\Framework.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/UseC18/production\Framework.X.production.obj
+__ptext21 1AA2 0 CODE 0 text21 dist/UseC18/production\Framework.X.production.obj
+__ptext40 180A 0 CODE 0 text40 dist/UseC18/production\Framework.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/UseC18/production\Framework.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/UseC18/production\Framework.X.production.obj
+__ptext12 1A18 0 CODE 0 text12 dist/UseC18/production\Framework.X.production.obj
+__ptext31 1720 0 CODE 0 text31 dist/UseC18/production\Framework.X.production.obj
+__ptext50 E5E 0 CODE 0 text50 dist/UseC18/production\Framework.X.production.obj
+__Htext51 0 0 ABS 0 text51 dist/UseC18/production\Framework.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/UseC18/production\Framework.X.production.obj
+__Ltext51 0 0 ABS 0 text51 dist/UseC18/production\Framework.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/UseC18/production\Framework.X.production.obj
+__HbssBANK2 0 0 ABS 0 bssBANK2 dist/UseC18/production\Framework.X.production.obj
+__ptext41 1AB0 0 CODE 0 text41 dist/UseC18/production\Framework.X.production.obj
+__LbssBANK2 0 0 ABS 0 bssBANK2 dist/UseC18/production\Framework.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/UseC18/production\Framework.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/UseC18/production\Framework.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/UseC18/production\Framework.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/UseC18/production\Framework.X.production.obj
+__ptext13 17D4 0 CODE 0 text13 dist/UseC18/production\Framework.X.production.obj
+__ptext51 160E 0 CODE 0 text51 dist/UseC18/production\Framework.X.production.obj
+__pbssBANK2 200 0 BANK2 1 bssBANK2 dist/UseC18/production\Framework.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/UseC18/production\Framework.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/UseC18/production\Framework.X.production.obj
+___extmem_base 20000 0 ABS 0 - C:\Users\Ben\AppData\Local\Temp\s2no.obj
+__Ltext33 0 0 ABS 0 text33 dist/UseC18/production\Framework.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/UseC18/production\Framework.X.production.obj
+__ptext23 193E 0 CODE 0 text23 dist/UseC18/production\Framework.X.production.obj
+__ptext42 1A98 0 CODE 0 text42 dist/UseC18/production\Framework.X.production.obj
+main@t0thread_data 1E7 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__Htext43 0 0 ABS 0 text43 dist/UseC18/production\Framework.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/UseC18/production\Framework.X.production.obj
+__Ltext43 0 0 ABS 0 text43 dist/UseC18/production\Framework.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/UseC18/production\Framework.X.production.obj
+__ptext14 169C 0 CODE 0 text14 dist/UseC18/production\Framework.X.production.obj
+__ptext33 15C0 0 CODE 0 text33 dist/UseC18/production\Framework.X.production.obj
+main@t1thread_data 1EC 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+?_handle_start 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/UseC18/production\Framework.X.production.obj
+?_ToMainLow_sendmsg 17 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/UseC18/production\Framework.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/UseC18/production\Framework.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/UseC18/production\Framework.X.production.obj
+__ptext24 1A72 0 CODE 0 text24 dist/UseC18/production\Framework.X.production.obj
+__ptext43 10E4 0 CODE 0 text43 dist/UseC18/production\Framework.X.production.obj
+__Htext44 0 0 ABS 0 text44 dist/UseC18/production\Framework.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/UseC18/production\Framework.X.production.obj
+_WriteTimer0 1A60 0 CODE 0 text46 dist/UseC18/production\Framework.X.production.obj
+__Ltext44 0 0 ABS 0 text44 dist/UseC18/production\Framework.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/UseC18/production\Framework.X.production.obj
+__ptext15 1656 0 CODE 0 text15 dist/UseC18/production\Framework.X.production.obj
+__ptext34 19B4 0 CODE 0 text34 dist/UseC18/production\Framework.X.production.obj
+_FromMainLow_MQ 136 0 BANK1 1 bssBANK1 dist/UseC18/production\Framework.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/UseC18/production\Framework.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/UseC18/production\Framework.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/UseC18/production\Framework.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/UseC18/production\Framework.X.production.obj
+__ptext25 198E 0 CODE 0 text25 dist/UseC18/production\Framework.X.production.obj
+__ptext44 18C0 0 CODE 0 text44 dist/UseC18/production\Framework.X.production.obj
+__Htext45 0 0 ABS 0 text45 dist/UseC18/production\Framework.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/UseC18/production\Framework.X.production.obj
+__Ltext45 0 0 ABS 0 text45 dist/UseC18/production\Framework.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/UseC18/production\Framework.X.production.obj
+__ptext16 1A2A 0 CODE 0 text16 dist/UseC18/production\Framework.X.production.obj
+__ptext35 183A 0 CODE 0 text35 dist/UseC18/production\Framework.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/UseC18/production\Framework.X.production.obj
+__size_ofi2_check_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/UseC18/production\Framework.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/UseC18/production\Framework.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/UseC18/production\Framework.X.production.obj
+__ptext26 F50 0 CODE 0 text26 dist/UseC18/production\Framework.X.production.obj
+__ptext45 B2C 0 CODE 0 text45 dist/UseC18/production\Framework.X.production.obj
+FromMainHigh_sendmsg@length C3 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Htext46 0 0 ABS 0 text46 dist/UseC18/production\Framework.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/UseC18/production\Framework.X.production.obj
+__Ltext46 0 0 ABS 0 text46 dist/UseC18/production\Framework.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/UseC18/production\Framework.X.production.obj
+__end_of_uart_rx_int_handler 150C 0 CODE 0 text38 dist/UseC18/production\Framework.X.production.obj
+__ptext17 139A 0 CODE 0 text17 dist/UseC18/production\Framework.X.production.obj
+__ptext36 1A82 0 CODE 0 text36 dist/UseC18/production\Framework.X.production.obj
+main@test_var 1EA 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/UseC18/production\Framework.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/UseC18/production\Framework.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/UseC18/production\Framework.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/UseC18/production\Framework.X.production.obj
+ToMainHigh_recvmsg@msgtype C6 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__ptext27 18EC 0 CODE 0 text27 dist/UseC18/production\Framework.X.production.obj
+__ptext46 1A60 0 CODE 0 text46 dist/UseC18/production\Framework.X.production.obj
+__size_of_uart_tx_int_handler 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Htext47 0 0 ABS 0 text47 dist/UseC18/production\Framework.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/UseC18/production\Framework.X.production.obj
+__Ltext47 0 0 ABS 0 text47 dist/UseC18/production\Framework.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/UseC18/production\Framework.X.production.obj
+__ptext18 150C 0 CODE 0 text18 dist/UseC18/production\Framework.X.production.obj
+__ptext37 1AAA 0 CODE 0 text37 dist/UseC18/production\Framework.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/UseC18/production\Framework.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/UseC18/production\Framework.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/UseC18/production\Framework.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/UseC18/production\Framework.X.production.obj
+__ptext28 1A4E 0 CODE 0 text28 dist/UseC18/production\Framework.X.production.obj
+__ptext47 CC 0 CODE 0 text47 dist/UseC18/production\Framework.X.production.obj
+__size_ofi1_memcpy 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_uart_rx_int_handler 1496 0 CODE 0 text38 dist/UseC18/production\Framework.X.production.obj
+__Htext48 0 0 ABS 0 text48 dist/UseC18/production\Framework.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/UseC18/production\Framework.X.production.obj
+__Ltext48 0 0 ABS 0 text48 dist/UseC18/production\Framework.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/UseC18/production\Framework.X.production.obj
+__ptext19 141C 0 CODE 0 text19 dist/UseC18/production\Framework.X.production.obj
+__ptext38 1496 0 CODE 0 text38 dist/UseC18/production\Framework.X.production.obj
+_uart_tx_int_handler 193E 0 CODE 0 text23 dist/UseC18/production\Framework.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/UseC18/production\Framework.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/UseC18/production\Framework.X.production.obj
+__ptext29 19D8 0 CODE 0 text29 dist/UseC18/production\Framework.X.production.obj
+__ptext48 1020 0 CODE 0 text48 dist/UseC18/production\Framework.X.production.obj
+__Htext49 0 0 ABS 0 text49 dist/UseC18/production\Framework.X.production.obj
+__Ltext49 0 0 ABS 0 text49 dist/UseC18/production\Framework.X.production.obj
+__ptext39 19FA 0 CODE 0 text39 dist/UseC18/production\Framework.X.production.obj
+_ReadUSART 19FA 0 CODE 0 text39 dist/UseC18/production\Framework.X.production.obj
+_OSCCONbits FD3 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__ptext49 1966 0 CODE 0 text49 dist/UseC18/production\Framework.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_OpenUSART 139A 0 CODE 0 text17 dist/UseC18/production\Framework.X.production.obj
+__end_of_send_msg E5E 0 CODE 0 text4 dist/UseC18/production\Framework.X.production.obj
+__Hend_init CC 0 CODE 0 end_init dist/UseC18/production\Framework.X.production.obj
+__Lend_init C8 0 CODE 0 end_init dist/UseC18/production\Framework.X.production.obj
+?_ReadADC 30 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_ofi2_memcpy 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_CloseTimer1 1AB0 0 CODE 0 text41 dist/UseC18/production\Framework.X.production.obj
+_WriteTimer1 1A4E 0 CODE 0 text28 dist/UseC18/production\Framework.X.production.obj
+__end_of_FromMainHigh_recvmsg 19B4 0 CODE 0 text25 dist/UseC18/production\Framework.X.production.obj
+i2_FromMainHigh_recvmsg 18C0 0 CODE 0 text44 dist/UseC18/production\Framework.X.production.obj
+__end_of_init_queue 1496 0 CODE 0 text19 dist/UseC18/production\Framework.X.production.obj
+memcpy@d1 AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_InterruptHandlerHigh 139A 0 CODE 0 intcode_body dist/UseC18/production\Framework.X.production.obj
+__CFG_FOSC$HSPLL 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__Hjflash_buffer 7800 0 CODE 0 jflash_buffer dist/UseC18/production\Framework.X.production.obj
+__end_of_ReadUSART 1A18 0 CODE 0 text39 dist/UseC18/production\Framework.X.production.obj
+__Ljflash_buffer 7800 0 CODE 0 jflash_buffer dist/UseC18/production\Framework.X.production.obj
+send_msg@msgtype BA 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_init_queues 1572 0 CODE 0 text18 dist/UseC18/production\Framework.X.production.obj
+recv_msg@msgtype BA 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Ben\AppData\Local\Temp\s2no.obj
+i2FromMainHigh_recvmsg@maxlength 92 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+i2c_int_handler@data_read 9D 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/UseC18/production\Framework.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/UseC18/production\Framework.X.production.obj
+_in_low_int 1656 0 CODE 0 text15 dist/UseC18/production\Framework.X.production.obj
+__size_of_FromMainHigh_sendmsg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_enable_interrupts 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+memcpy@s1 AF 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__accesstop 80 0 ABS 0 - C:\Users\Ben\AppData\Local\Temp\s2no.obj
+__end_of_recv_msg B2C 0 CODE 0 text9 dist/UseC18/production\Framework.X.production.obj
+?i2_FromMainHigh_recvmsg 92 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/UseC18/production\Framework.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/UseC18/production\Framework.X.production.obj
+__pintcode_body 12F2 0 CODE 0 intcode_body dist/UseC18/production\Framework.X.production.obj
+_message4 44 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_ofi1_recv_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+_enable_interrupts 1AA2 0 CODE 0 text21 dist/UseC18/production\Framework.X.production.obj
+intlevel0 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s2no.obj
+__size_of_block_on_To_msgqueues 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+intlevel1 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s2no.obj
+intlevel2 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s2no.obj
+intlevel3 0 0 CODE 0 text C:\Users\Ben\AppData\Local\Temp\s2no.obj
+__size_ofi2_recv_msg 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+i2c_int_handler@error_buf 95 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+ToMainLow_sendmsg@length 17 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+_counter2 39 0 COMRAM 1 bssCOMRAM dist/UseC18/production\Framework.X.production.obj
+__size_ofi2_in_high_int 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+i1send_msg@slot 14 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2send_msg@slot 8C 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_init_timer1_lthread 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_SleepIfOkay 160E 0 CODE 0 text33 dist/UseC18/production\Framework.X.production.obj
+i1recv_msg@slot 14 0 COMRAM 1 cstackCOMRAM dist/UseC18/production\Framework.X.production.obj
+i2recv_msg@slot 8D 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+_ToMainHigh_recvmsg 1894 0 CODE 0 text8 dist/UseC18/production\Framework.X.production.obj
+start_initialization 179E 0 CODE 0 cinit dist/UseC18/production\Framework.X.production.obj
+i2c_int_handler@msg_ready 9C 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_ofi1_memcpy 1760 0 CODE 0 text31 dist/UseC18/production\Framework.X.production.obj
+main@last_reg_recvd 1E9 0 BANK1 1 cstackBANK1 dist/UseC18/production\Framework.X.production.obj
+__size_of_ReadADC 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_ofi2_memcpy 1656 0 CODE 0 text51 dist/UseC18/production\Framework.X.production.obj
+__initialization 179E 0 CODE 0 cinit dist/UseC18/production\Framework.X.production.obj
+start_i2c_slave_reply@msg AE 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_in_low_int 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+timer0_int_handler@val 9D 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__end_of_adc_int_handler 183A 0 CODE 0 text40 dist/UseC18/production\Framework.X.production.obj
+?_init_timer1_lthread AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_ofi2_check_msg 19D8 0 CODE 0 text34 dist/UseC18/production\Framework.X.production.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+timer0_int_handler@length 99 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__end_of_i2c_int_handler 724 0 CODE 0 text47 dist/UseC18/production\Framework.X.production.obj
+_FromMainHigh_sendmsg 1916 0 CODE 0 text3 dist/UseC18/production\Framework.X.production.obj
+Delay1KTCYx@unit AD 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+__size_of_handle_start 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+__size_of_memcpy 0 0 ABS 0 - dist/UseC18/production\Framework.X.production.obj
+?_FromMainHigh_sendmsg C3 0 BANK0 1 cstackBANK0 dist/UseC18/production\Framework.X.production.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1 CODE
+intcode 0 8 8 10 1 CODE
+intcodelo 0 18 18 1A9E 1 CODE
+config 0 7FF8 7FF8 6 1 CONFIG
+cstackCOMRAM 1 1 1 50 1 COMRAM
+cstackBANK0 1 80 80 53 1 BANK0
+bssBANK1 1 100 100 F0 1 BANK1
+bssBANK2 1 200 200 32 1 BANK2

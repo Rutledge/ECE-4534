@@ -1,0 +1,8 @@
+RTOS
+
+Scheduler knows task priorites states
+-Decides when a task should be unblocked and run
+-KNows when ISR has occured
+
+Interrupt-->ISR-->Queue-->Task
+
