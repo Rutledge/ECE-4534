@@ -1,3 +1,5 @@
+# C Focused gitignore
+
 # Object files
 *.o
 *.ko
